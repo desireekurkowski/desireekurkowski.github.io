@@ -539,19 +539,20 @@ h3{
 }
 
 /* =========================
-   TEAMS – Refined Pill Cards
+   TEAMS – Final 2x2 Clean Pills
 ========================= */
 
 .teams-section{
-  padding-top: 32px;
+  padding-top: 28px;
 }
 
 .teams-list{
-  display:flex;
-  flex-direction:column;
-  gap:18px;
-  max-width:720px;  /* control width */
-  margin-top:18px;
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  list-style:none;
+  padding:0;
+  margin:16px 0 0;
 }
 
 @media (max-width: 820px){
@@ -564,32 +565,38 @@ h3{
   width:100%;
   text-align:left;
 
-  background: rgba(255,255,255,.75);
-  border: 1px solid rgba(0,0,0,.04);
+  background: rgba(255,255,255,.88);
+  border: 1px solid rgba(0,0,0,.05);
   border-radius: 16px;
 
-  padding: 18px 22px;
+  padding: 16px 18px;
 
   color: var(--text);
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.5;
 
   cursor: pointer;
 
   transition:
-    transform .18s ease,
-    box-shadow .22s ease,
-    background .22s ease,
-    border-color .22s ease;
+    transform .16s ease,
+    box-shadow .20s ease,
+    background .20s ease,
+    border-color .20s ease;
 }
 
+/* subtle interactive hover */
 .teams-item:hover{
   transform: translateY(-2px);
   background: white;
-  border-color: rgba(63,60,145,.18);
+  border-color: rgba(63,60,145,.20);
   box-shadow:
     0 8px 24px rgba(0,0,0,.04),
-    0 6px 18px rgba(63,60,145,.10);
+    0 6px 18px rgba(63,60,145,.08);
+}
+
+.teams-item:focus-visible{
+  outline: 2px solid rgba(63,60,145,.35);
+  outline-offset: 3px;
 }
 /* Modal */
 .teams-dialog{
