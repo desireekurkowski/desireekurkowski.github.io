@@ -854,3 +854,39 @@ h2{
 .acc-chevron{
   opacity: .55;
 }
+
+/* =========================
+   SELECTED WORK ACCORDION TYPOGRAPHY
+   ========================= */
+
+/* Body text inside expanded accordion */
+.acc-body{
+  font-size:14.5px;
+  line-height:1.65;
+  color:var(--muted);
+  padding:18px 22px 20px;
+}
+
+/* spacing between scenario / hypothesis / etc */
+.acc-body p{
+  margin:12px 0;
+}
+
+/* reduce boldness of labels like "Scenario:" */
+.acc-body strong{
+  font-weight:600;
+  color:var(--text);
+}
+
+/* make accordion titles match other card titles */
+.acc-title{
+  font-size:var(--card-title-size);
+  font-weight:var(--card-title-weight);
+  letter-spacing:var(--card-title-tracking);
+  line-height:1.25;
+}
+
+/* subtle chevron */
+.acc-chevron{
+  opacity:.55;
+}
