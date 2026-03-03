@@ -348,3 +348,21 @@ h3{
 .acc-body p{
   margin:14px 0;
 }
+
+/* Selected Work grid */
+.acc-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items:start; /* prevents stretch weirdness */
+}
+
+/* When a card is open, let it span both columns */
+.acc-card[open]{
+  grid-column: 1 / -1;
+}
+
+/* Optional: make the summary row feel clickable */
+.acc-card summary{
+  cursor:pointer;
+}
