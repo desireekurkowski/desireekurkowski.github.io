@@ -122,6 +122,9 @@ h3{
   grid-template-columns: 1.2fr .8fr;
   gap:20px;
   align-items:start;
+   /* Adjust hero image vertical alignment */
+.hero-art{
+  margin-top:38px;
 }
 
 @media (max-width:900px){
