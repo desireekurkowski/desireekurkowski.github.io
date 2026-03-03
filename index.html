@@ -119,102 +119,185 @@
     </section>
 
     <!-- APPROACH -->
-    <section id="approach" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>How I Validate</h2>
-          <p>Scientific rigor without unnecessary complexity.</p>
-        </div>
+   <!-- APPROACH -->
+<section class="section" id="approach">
+  <div class="container">
+    <div class="section-head">
+      <h2>How I Validate</h2>
+      <p class="section-subhead">
+        Scientific rigor without unnecessary complexity — tailored to your traffic, tooling, and timeline.
+      </p>
+    </div>
 
-        <div class="grid3">
-          <div class="card">
-            <h3>Diagnose</h3>
-            <p class="muted">
-              Identify friction and opportunity across the journey using behavioral signals and KPI context.
-            </p>
-          </div>
+    <div class="grid3">
+      <article class="card">
+        <h3>1) Diagnose</h3>
+        <p class="muted">
+          Identify friction and opportunity using analytics, behavior signals, and qualitative inputs (support tickets, feedback, session insights).
+        </p>
+      </article>
 
-          <div class="card">
-            <h3>Hypothesize</h3>
-            <p class="muted">
-              Write testable hypotheses grounded in observed behavior —
-              not “because someone wants to run a test.”
-            </p>
-          </div>
+      <article class="card">
+        <h3>2) Hypothesize</h3>
+        <p class="muted">
+          Write a testable hypothesis grounded in observed behavior — not “because someone wants to try it.”
+          Define success metrics and guardrails upfront.
+        </p>
+      </article>
 
-          <div class="card">
-            <h3>Validate</h3>
-            <p class="muted">
-              Use controlled testing when possible, probability-based evaluation when volume is limited,
-              and pre/post analysis with guardrails.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <article class="card">
+        <h3>3) Validate</h3>
+        <p class="muted">
+          Run an A/B test when possible. If volume is limited, use practical alternatives (Bayesian indicators, staged rollouts,
+          and pre/post validation) with clear decision criteria.
+        </p>
+      </article>
+    </div>
 
+    <div class="card" style="margin-top:12px;">
+      <h3>How this works with design partners</h3>
+      <p class="muted">
+        I work closely with creative and design to test concepts before they’re permanently shipped —
+        validating what performs best and why. This makes design decisions easier to defend, iterate, and scale.
+      </p>
+    </div>
+  </div>
+</section>
     <!-- SELECTED WORK -->
-    <section id="work" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Selected Work</h2>
-          <p>Expand for detail.</p>
+   <section id="work" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Selected Work</h2>
+      <p class="section-subhead">
+        A few anonymized experiments across the funnel — from discovery to decision to conversion.
+        Each example includes the context, hypothesis, and what we learned.
+      </p>
+    </div>
+
+    <div class="grid2">
+      <!-- Case Study 1 -->
+      <article class="card">
+        <h3>Countdown + Urgency Messaging at a High-Intent Moment</h3>
+
+        <p class="muted">
+          <strong>Scenario:</strong> Teams needed a clear way to communicate a time-sensitive promotion without overwhelming the page
+          or hurting conversion.
+        </p>
+
+        <p class="muted">
+          <strong>Hypothesis:</strong> If we add a simple countdown and tighten urgency copy near the primary CTA,
+          engagement will increase (CTR) while downstream conversion holds steady or improves.
+        </p>
+
+        <p class="muted">
+          <strong>What I did:</strong> Designed the test plan, aligned on success metrics + guardrails, partnered with design/dev on the UI,
+          and monitored performance daily to inform rollout decisions.
+        </p>
+
+        <p class="muted">
+          <strong>Outcome:</strong> Double-digit lift in engagement (CTR). Scaled as a reusable pattern for major site moments.
+        </p>
+
+        <div class="meta-row">
+          <span class="tag">UX messaging</span>
+          <span class="tag">Urgency</span>
+          <span class="tag">Experimentation</span>
         </div>
+      </article>
 
-        <div class="accordion">
+      <!-- Case Study 2 -->
+      <article class="card">
+        <h3>Cross-Sell Placement in Product Discovery</h3>
 
-          <details class="acc card">
-            <summary>
-              <span class="acc-title">Behavioral Urgency Framework</span>
-            </summary>
-            <div class="acc-body">
-              <p class="muted">
-                Tested urgency mechanics across multiple campaigns to understand how time sensitivity influences behavior.
-              </p>
-              <ul class="bullets">
-                <li>Repeated engagement lifts observed across campaigns</li>
-                <li>Behavioral spikes near deadline windows</li>
-                <li>Confirmed full-funnel validation required beyond click lift</li>
-                <li>Framework scaled across high-visibility launches</li>
-              </ul>
-            </div>
-          </details>
+        <p class="muted">
+          <strong>Scenario:</strong> Users browsing a category page often didn’t discover relevant add-ons until late in the journey.
+        </p>
 
-          <details class="acc card">
-            <summary>
-              <span class="acc-title">Contextual Cross-Sell & Intent Alignment</span>
-            </summary>
-            <div class="acc-body">
-              <p class="muted">
-                Evaluated cross-category placements aligned to user context and intent.
-              </p>
-              <ul class="bullets">
-                <li>Increased visibility and engagement</li>
-                <li>Protected core conversion metrics</li>
-                <li>Established repeatable contextual placement pattern</li>
-              </ul>
-            </div>
-          </details>
+        <p class="muted">
+          <strong>Hypothesis:</strong> If we introduce a contextual cross-sell card in the discovery flow (where intent is forming),
+          we can increase cross-sell engagement without disrupting the primary browse goal.
+        </p>
 
-          <details class="acc card">
-            <summary>
-              <span class="acc-title">Decision Architecture Optimization</span>
-            </summary>
-            <div class="acc-body">
-              <p class="muted">
-                Improved how users evaluate complex choices through guidance and structural clarity.
-              </p>
-              <ul class="bullets">
-                <li>Guided decision experiences increased conversion</li>
-                <li>Default ordering influenced selection behavior</li>
-                <li>Structural clarity outperformed cosmetic changes</li>
-              </ul>
-            </div>
-          </details>
+        <p class="muted">
+          <strong>What I did:</strong> Mapped placement to funnel stage, defined eligibility rules, aligned tracking,
+          and validated impact beyond clicks (progression + conversion guardrails).
+        </p>
 
+        <p class="muted">
+          <strong>Outcome:</strong> Lift in cross-sell engagement with no meaningful negative impact to the primary conversion goal.
+        </p>
+
+        <div class="meta-row">
+          <span class="tag">Discovery</span>
+          <span class="tag">Cross-sell</span>
+          <span class="tag">Funnel impact</span>
         </div>
-      </div>
-    </section>
+      </article>
+
+      <!-- Case Study 3 -->
+      <article class="card">
+        <h3>Navigation + Wayfinding Improvement</h3>
+
+        <p class="muted">
+          <strong>Scenario:</strong> Users weren’t finding high-value pages quickly, creating drop-off and repeated backtracking.
+        </p>
+
+        <p class="muted">
+          <strong>Hypothesis:</strong> If we add a clearer navigation element with purposeful labels,
+          more users will self-serve and move into key pages (higher CTR + stronger downstream progression).
+        </p>
+
+        <p class="muted">
+          <strong>What I did:</strong> Defined behavioral goals, set success metrics (CTR + downstream),
+          and ensured results were interpreted correctly (net-new element vs “increase” framing).
+        </p>
+
+        <p class="muted">
+          <strong>Outcome:</strong> Increased engagement with the new navigation element and improved movement into key content.
+        </p>
+
+        <div class="meta-row">
+          <span class="tag">IA</span>
+          <span class="tag">UX clarity</span>
+          <span class="tag">Measurement</span>
+        </div>
+      </article>
+
+      <!-- Case Study 4 -->
+      <article class="card">
+        <h3>Offer Messaging to Reduce Decision Friction</h3>
+
+        <p class="muted">
+          <strong>Scenario:</strong> Users hesitated when comparing options because the value proposition wasn’t immediately clear.
+        </p>
+
+        <p class="muted">
+          <strong>Hypothesis:</strong> If we simplify the message and surface the “why it matters” at the decision point,
+          we can reduce hesitation and improve progression.
+        </p>
+
+        <p class="muted">
+          <strong>What I did:</strong> Crafted the hypothesis, aligned stakeholders on what success means,
+          and translated the business question into measurable user behavior.
+        </p>
+
+        <p class="muted">
+          <strong>Outcome:</strong> Improved engagement with the offer and stronger progression through the next step of the funnel.
+        </p>
+
+        <div class="meta-row">
+          <span class="tag">Decision design</span>
+          <span class="tag">Copy strategy</span>
+          <span class="tag">UX testing</span>
+        </div>
+      </article>
+    </div>
+
+    <p class="fineprint" style="margin-top:14px;">
+      Want additional examples? I can share more anonymized summaries on request.
+    </p>
+  </div>
+</section>
 
     <!-- CONTACT -->
     <section id="contact" class="section alt">
