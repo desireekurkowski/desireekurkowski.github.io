@@ -565,16 +565,16 @@ h3{
   width:100%;
   text-align:left;
 
-  background: rgba(255,255,255,.85); /* lighter */
+  background: rgba(255,255,255,.92);
   border: 1px solid rgba(0,0,0,.05);
   border-radius: 18px;
 
-  padding: 16px 18px 16px 18px; /* remove left indent */
+  padding: 18px 20px 18px 20px;
   position: relative;
 
   color: var(--text);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.55;
 
   cursor: pointer;
 
@@ -585,9 +585,20 @@ h3{
     border-color .22s ease;
 }
 
-/* Remove dot entirely for cleaner look */
+/* subtle purple accent bar */
+.teams-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:20%;
+  height:60%;
+  width:3px;
+  background: var(--accent);
+  border-radius: 4px;
+  opacity:.4;
+}
 
-/* Hover = soft lift + purple glow */
+/* hover */
 .teams-item:hover{
   transform: translateY(-2px);
   background: white;
@@ -597,61 +608,8 @@ h3{
     0 8px 24px rgba(63,60,145,.10);
 }
 
-.teams-item:focus-visible{
-  outline: 2px solid rgba(63,60,145,.35);
-  outline-offset: 3px;
-}
-/* Purple indicator dot */
-.teams-item::before{
-  content:"";
-  position:absolute;
-  left:16px;
-  top:18px;
-  width:10px;
-  height:10px;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(63,60,145,.10);
-}
-
-/* Hover = subtle purple lift */
-.teams-item:hover{
-  transform: translateY(-2px);
-  background: rgba(255,255,255,.95);
-  border-color: rgba(63,60,145,.18);
-  box-shadow:
-    0 10px 28px rgba(0,0,0,.05),
-    0 6px 18px rgba(63,60,145,.08);
-}
-
-/* Focus state */
-.teams-item:focus-visible{
-  outline: 2px solid rgba(63,60,145,.35);
-  outline-offset: 3px;
-}
-
-/* Purple bullet */
-.teams-item::before{
-  content:"•";
-  position:absolute;
-  left:8px;
-  top:10px;
-  color: var(--accent);
-  font-size: 14px;
-}
-
-/* Hover effect – subtle purple wash + lift */
-.teams-item:hover{
-  background: rgba(63,60,145,.06);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(63,60,145,.08);
-  color: var(--text);
-  text-decoration: none;
-}
-
-.teams-item:focus-visible{
-  outline: 2px solid rgba(63,60,145,.35);
-  outline-offset: 3px;
+.teams-item:hover::before{
+  opacity: .9;
 }
 
 /* Modal */
