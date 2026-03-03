@@ -1,6 +1,6 @@
 /* =========================
    Desiree Portfolio Styles
-   Light Studio (Compact)
+   Light Studio – Compact + Aligned
 ========================= */
 
 :root{
@@ -15,6 +15,7 @@
 /* Base */
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
+
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -23,11 +24,13 @@ body{
   line-height:1.6;
 }
 
+a{ color:inherit; }
+
 /* Layout */
 .container{
   max-width:1100px;
   margin:0 auto;
-  padding:0 20px;              /* slightly tighter */
+  padding:0 16px;   /* tighter side padding */
 }
 
 /* Header */
@@ -44,7 +47,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:12px 0;              /* tighter */
+  padding:12px 0;
 }
 
 .logo{
@@ -57,7 +60,7 @@ body{
 .navlinks{
   display:flex;
   align-items:center;
-  gap:18px;                    /* tighter */
+  gap:18px;
 }
 
 .navlinks a{
@@ -72,7 +75,7 @@ body{
   text-decoration:none;
   border:1px solid rgba(0,0,0,.10);
   border-radius:10px;
-  padding:7px 10px;            /* tighter */
+  padding:7px 10px;
   font-size:13px;
   color:var(--accent);
   background:rgba(255,255,255,.70);
@@ -84,14 +87,14 @@ body{
   .navlinks{ display:none; }
 }
 
-/* Hero */
+/* HERO */
 .hero{
-  padding:52px 0 28px;         /* MUCH tighter */
+  padding:44px 0 24px;   /* reduced vertical space */
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns: 1.2fr .8fr; /* slightly tighter right column */
+  grid-template-columns: 1.2fr .8fr;
   gap:20px;
   align-items:start;
 }
@@ -100,9 +103,20 @@ body{
   .hero-grid{ grid-template-columns:1fr; }
 }
 
+/* Move hero card down to align with heading */
+.hero-card{
+  margin-top:48px;
+}
+
+@media (max-width:900px){
+  .hero-card{
+    margin-top:18px;
+  }
+}
+
 .pill{
   display:inline-block;
-  padding:5px 10px;            /* tighter */
+  padding:5px 10px;
   border:1px solid rgba(0,0,0,.10);
   border-radius:999px;
   font-size:12px;
@@ -112,7 +126,7 @@ body{
 }
 
 h1{
-  font-size:38px;              /* smaller for compactness */
+  font-size:40px;
   line-height:1.1;
   margin:0 0 12px;
   font-weight:700;
@@ -127,10 +141,14 @@ h1{
 }
 
 .body{
-  font-size:15px;              /* slightly smaller */
+  font-size:15px;
   line-height:1.65;
   color:var(--muted);
   margin:0;
+}
+
+.muted{
+  color:var(--muted);
 }
 
 .hero-actions{
@@ -140,20 +158,25 @@ h1{
   flex-wrap:wrap;
 }
 
+.fineprint{
+  font-size:13px;
+  margin-top:10px;
+  color:var(--muted);
+}
+
 /* Sections */
 .section{
-  padding:34px 0;              /* tighter overall */
+  padding:28px 0;
 }
 
 .section-head{
-  margin-bottom:14px;          /* tighter */
+  margin-bottom:14px;
 }
 
 .section-head h2{
   margin:0 0 6px;
-  font-size:18px;              /* smaller */
+  font-size:18px;
   font-weight:700;
-  letter-spacing:-.1px;
 }
 
 .section-head p{
@@ -167,7 +190,7 @@ h1{
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:14px;
-  padding:18px;                /* KEY: smaller card padding */
+  padding:16px;    /* reduced padding */
 }
 
 /* Grids */
@@ -182,32 +205,20 @@ h1{
 
 /* Lists */
 .checklist{
-  list-style:none;
-  padding:0;
+  padding-left:18px;
   margin:0;
 }
 
 .checklist li{
   margin:0 0 8px;
   color:var(--muted);
-  font-size:13px;
-}
-
-.bullets{
-  padding-left:18px;
-  margin:10px 0 0;
-  color:var(--muted);
-}
-
-.bullets li{
-  margin:0 0 6px;
-  font-size:13px;
+  font-size:14px;
 }
 
 /* Buttons */
 .btn{
   display:inline-block;
-  padding:10px 14px;           /* slightly smaller */
+  padding:10px 14px;
   border-radius:12px;
   border:1px solid rgba(0,0,0,.10);
   text-decoration:none;
@@ -235,7 +246,7 @@ h1{
 
 /* Footer */
 .footer{
-  padding:28px 0;              /* tighter */
+  padding:28px 0;
   border-top:1px solid rgba(0,0,0,.08);
   color:var(--muted);
   font-size:13px;
