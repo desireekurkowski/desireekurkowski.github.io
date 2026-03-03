@@ -495,3 +495,45 @@ h3{
   .acc-grid{ grid-template-columns: 1fr; }
   .acc-meta{ max-width: none; }
 }
+
+/* HERO right column: image + compact card */
+.hero-right{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  align-self:start;
+}
+
+.hero-art{
+  width:100%;
+  max-width:520px;
+  height:auto;
+  display:block;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+  transition:transform .18s ease, filter .18s ease;
+}
+
+/* Subtle hover: slightly brighter/saturated (purple pops) */
+.hero-art:hover{
+  transform:translateY(-2px);
+  filter:saturate(1.06) brightness(1.03) contrast(1.02);
+}
+
+/* Make the “Teams come to me when” card smaller */
+.hero-card--compact{
+  padding:18px 18px;
+}
+
+.hero-card--compact h3{
+  margin:0 0 10px;
+}
+
+.hero-card--compact .checklist{
+  margin:0;
+  padding-left:18px;
+}
+
+.hero-card--compact .checklist li{
+  margin:8px 0;
+}
