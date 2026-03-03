@@ -257,3 +257,66 @@ h3{
   color:var(--muted);
   font-size:13px;
 }
+
+/* --- existing CSS above --- */
+
+
+/* =========================================
+   Accordion (Selected Work)
+========================================= */
+
+.accordion{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.acc-card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.75);
+  overflow:hidden;
+}
+
+.acc-card summary{
+  list-style:none;
+  cursor:pointer;
+  padding:16px 18px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.acc-card summary::-webkit-details-marker{ display:none; }
+
+.acc-title{
+  font-weight:700;
+  color:var(--text);
+  line-height:1.25;
+}
+
+.acc-meta{
+  font-size:12px;
+  color:var(--muted);
+  white-space:nowrap;
+  padding-top:2px;
+}
+
+.acc-card[open] summary{
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.9);
+}
+
+.acc-body{
+  padding:14px 18px 16px;
+}
+
+@media (max-width: 820px){
+  .acc-card summary{
+    flex-direction:column;
+  }
+  .acc-meta{
+    white-space:normal;
+  }
+}
