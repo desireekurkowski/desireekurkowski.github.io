@@ -258,6 +258,38 @@ h3{
   font-size:13px;
 }
 
+.hero-right{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.signal-visual img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:16px;
+}
+
+/* Compact the "Teams come to me when" card */
+.hero-card.compact{
+  padding:14px 16px; /* tighter */
+}
+
+.hero-card.compact h3{
+  margin:0 0 8px;
+  font-size:14px; /* slightly smaller than other H3s */
+}
+
+.checklist.compact li{
+  margin:6px 0;     /* tighter list spacing */
+  font-size:13px;   /* slightly smaller */
+  line-height:1.4;
+}
+
+
+
+
 /* --- existing CSS above --- */
 
 /* =========================
