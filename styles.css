@@ -791,3 +791,66 @@ h3{
     0 10px 26px rgba(0,0,0,.05),
     0 0 0 3px color-mix(in srgb, var(--accent) 8%, transparent);
 }
+
+/* =========================
+   Typography System Overrides (Uniform)
+   Paste at bottom of styles.css
+========================= */
+
+/* 1) Define consistent heading scale */
+h1{
+  font-size: 38px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+h2{
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+}
+
+/* Use ONE consistent "card title" style everywhere */
+:root{
+  --card-title-size: 15.5px;
+  --card-title-weight: 600;
+  --card-title-tracking: -0.1px;
+}
+
+/* 2) Apply that card title style to all card headings */
+.card h3{
+  font-size: var(--card-title-size);
+  font-weight: var(--card-title-weight);
+  letter-spacing: var(--card-title-tracking);
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+/* 3) Apply same style to Selected Work accordion titles */
+.acc-title{
+  font-size: var(--card-title-size);
+  font-weight: var(--card-title-weight); /* THIS is what reduces the boldness */
+  letter-spacing: var(--card-title-tracking);
+  line-height: 1.25;
+  color: var(--text);
+}
+
+/* Optional: make summary row feel less “headline-y” */
+.acc-card > summary{
+  padding: 16px 18px;
+  align-items: center;
+}
+
+/* Meta matches muted system */
+.acc-meta{
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+/* Keep chevron subtle */
+.acc-chevron{
+  opacity: .55;
+}
