@@ -26,49 +26,57 @@
 
   <main id="top">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="pill">Agnostic across B2B, SaaS, and Commerce</p>
+   <!-- HERO -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <!-- Left -->
+    <div class="hero-left">
+      <p class="pill">Agnostic across B2B, SaaS, and Commerce</p>
 
-          <h1>Behavioral Design & Decision Architecture</h1>
+      <h1>Behavioral Design & Decision Architecture</h1>
 
-          <p class="subhead">
-            Helping teams make smarter changes — and validating their impact.
-          </p>
+      <p class="subhead">
+        Helping teams make smarter changes — and validating their impact.
+      </p>
 
-          <p class="body">
-            I partner with product, design, and growth teams to reduce decision friction,
-            test high-impact ideas, and ensure changes improve performance across the customer journey.
-            <span class="muted">Clear hypotheses. Thoughtful execution. Measured outcomes.</span>
-          </p>
+      <p class="body">
+        I partner with product, design, and growth teams to reduce decision friction,
+        test high-impact ideas, and ensure changes improve performance across the customer journey.
+        <span class="muted">Clear hypotheses. Thoughtful execution. Measured outcomes.</span>
+      </p>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="#work">View Selected Work</a>
-            <a class="btn" href="#approach">How I Validate</a>
-          </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="#work">View Selected Work</a>
+        <a class="btn" href="#approach">How I Validate</a>
+      </div>
 
-          <p class="fineprint">
-            Work examples are anonymized to respect confidentiality.
-          </p>
-        </div>
+      <p class="fineprint">
+        Work examples are anonymized to respect confidentiality.
+      </p>
+    </div>
 
-<div class="hero-right">
-  <img
-    class="hero-art"
-    src="signal-noise.png?v=1"
-    alt="Abstract illustration showing noise becoming signal"
-    loading="eager"
-  />
+    <!-- Right -->
+    <div class="hero-right">
+      <img
+        class="hero-art"
+        src="signal-noise.png?v=2"
+        alt="Abstract illustration showing noise becoming signal"
+        loading="eager"
+      />
+    </div>
+  </div>
+</section>
 
+<!-- TEAMS -->
 <section class="section teams-section">
-  <div class="container">
+  <div class="container teams-container">
     <h2>Teams typically reach out when</h2>
 
     <ul class="teams-list">
       <li>
-        <button class="teams-item" type="button"
+        <button
+          class="teams-item"
+          type="button"
           data-title="Performance has plateaued"
           data-body="Conversion or engagement has leveled off, and teams want a clear, measurable path to improvement without random changes."
         >
@@ -77,7 +85,9 @@
       </li>
 
       <li>
-        <button class="teams-item" type="button"
+        <button
+          class="teams-item"
+          type="button"
           data-title="Prioritization is unclear"
           data-body="There are lots of ideas, but teams need a decision framework to choose what to test first and how to measure success."
         >
@@ -86,7 +96,9 @@
       </li>
 
       <li>
-        <button class="teams-item" type="button"
+        <button
+          class="teams-item"
+          type="button"
           data-title="Redesign confidence before rollout"
           data-body="Teams are redesigning key flows and want validation that the change improves progression—not just aesthetics—before shipping."
         >
@@ -95,7 +107,9 @@
       </li>
 
       <li>
-        <button class="teams-item" type="button"
+        <button
+          class="teams-item"
+          type="button"
           data-title="More rigor in measurement"
           data-body="Teams want experimentation with guardrails, clear hypotheses, and measurement beyond clicks—so decisions are defensible."
         >
@@ -104,6 +118,57 @@
       </li>
     </ul>
 
+    <!-- Modal -->
+    <dialog class="teams-dialog" id="teamsDialog">
+      <div class="teams-dialog__inner">
+        <button class="teams-dialog__close" type="button" aria-label="Close">✕</button>
+        <h3 class="teams-dialog__title" id="teamsDialogTitle"></h3>
+        <p class="teams-dialog__body" id="teamsDialogBody"></p>
+      </div>
+    </dialog>
+  </div>
+</section>
+
+<!-- Teams modal script -->
+<script>
+  (function () {
+    const dialog = document.getElementById("teamsDialog");
+    const titleEl = document.getElementById("teamsDialogTitle");
+    const bodyEl = document.getElementById("teamsDialogBody");
+    const closeBtn = dialog?.querySelector(".teams-dialog__close");
+
+    if (!dialog) return;
+
+    document.querySelectorAll(".teams-item").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        titleEl.textContent = btn.dataset.title || "";
+        bodyEl.textContent = btn.dataset.body || "";
+
+        if (typeof dialog.showModal === "function") {
+          dialog.showModal();
+        }
+      });
+    });
+
+    closeBtn?.addEventListener("click", () => dialog.close());
+
+    dialog.addEventListener("click", (e) => {
+      // close if you click the backdrop
+      const rect = dialog.getBoundingClientRect();
+      const clickedInside =
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom;
+
+      if (!clickedInside) dialog.close();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && dialog.open) dialog.close();
+    });
+  })();
+</script>
     <!-- Modal -->
     <dialog class="teams-dialog" id="teamsDialog">
       <div class="teams-dialog__inner">
