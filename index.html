@@ -62,15 +62,58 @@
     loading="eager"
   />
 
-  <aside class="card hero-card hero-card--compact">
-    <h3>Teams come to me when</h3>
-    <ul class="checklist">
-      <li>They have strong ideas but don’t know which will work</li>
-      <li>Performance has plateaued</li>
-      <li>They’re redesigning key flows and want confidence before rollout</li>
-      <li>They want more rigor in experimentation and measurement</li>
+<section class="section teams-section">
+  <div class="container">
+    <h2>Teams typically reach out when</h2>
+
+    <ul class="teams-list">
+      <li>
+        <button class="teams-item" type="button"
+          data-title="Performance has plateaued"
+          data-body="Conversion or engagement has leveled off, and teams want a clear, measurable path to improvement without random changes."
+        >
+          Performance has plateaued and growth is slowing
+        </button>
+      </li>
+
+      <li>
+        <button class="teams-item" type="button"
+          data-title="Prioritization is unclear"
+          data-body="There are lots of ideas, but teams need a decision framework to choose what to test first and how to measure success."
+        >
+          Strong ideas exist but prioritization is unclear
+        </button>
+      </li>
+
+      <li>
+        <button class="teams-item" type="button"
+          data-title="Redesign confidence before rollout"
+          data-body="Teams are redesigning key flows and want validation that the change improves progression—not just aesthetics—before shipping."
+        >
+          Key flows are being redesigned and confidence is needed before rollout
+        </button>
+      </li>
+
+      <li>
+        <button class="teams-item" type="button"
+          data-title="More rigor in measurement"
+          data-body="Teams want experimentation with guardrails, clear hypotheses, and measurement beyond clicks—so decisions are defensible."
+        >
+          There’s a desire for more rigor in experimentation and measurement
+        </button>
+      </li>
     </ul>
-  </aside>
+
+    <!-- Modal -->
+    <dialog class="teams-dialog" id="teamsDialog">
+      <div class="teams-dialog__inner">
+        <button class="teams-dialog__close" type="button" aria-label="Close">✕</button>
+        <h3 class="teams-dialog__title" id="teamsDialogTitle"></h3>
+        <p class="teams-dialog__body" id="teamsDialogBody"></p>
+      </div>
+    </dialog>
+  </div>
+</section>
 </div>
 </div>
       </div>
@@ -336,5 +379,33 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
+  <script>
+  (function () {
+    const dialog = document.getElementById("teamsDialog");
+    const titleEl = document.getElementById("teamsDialogTitle");
+    const bodyEl  = document.getElementById("teamsDialogBody");
+
+    if (!dialog) return;
+
+    document.querySelectorAll(".teams-item").forEach(btn => {
+      btn.addEventListener("click", () => {
+        titleEl.textContent = btn.dataset.title || "Details";
+        bodyEl.textContent  = btn.dataset.body  || "";
+        dialog.showModal();
+      });
+    });
+
+    // close button
+    dialog.querySelector(".teams-dialog__close")?.addEventListener("click", () => dialog.close());
+
+    // click outside closes
+    dialog.addEventListener("click", (e) => {
+      const inner = dialog.querySelector(".teams-dialog__inner");
+      if (inner && !inner.contains(e.target)) dialog.close();
+    });
+  })();
+</script>
+  
 </body>
 </html>
