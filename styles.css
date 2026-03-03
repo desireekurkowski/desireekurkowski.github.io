@@ -687,3 +687,75 @@ h3{
           </div>
         </div>
       </details>
+ <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <span class="acc-title">Decision Clarity Framework</span>
+          </div>
+          <span class="acc-meta">Improved progression • Reduced hesitation</span>
+        </summary>
+
+/* Accordion header glow + match site */
+.acc-card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.acc-card > summary{
+  list-style:none;
+  cursor:pointer;
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+
+.acc-card > summary::-webkit-details-marker{ display:none; }
+
+.acc-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:0;
+}
+
+.acc-title{
+  font-weight:700;
+  font-size:15px;
+  letter-spacing:-0.1px;
+}
+
+.acc-meta{
+  font-size:13px;
+  color:var(--muted);
+  text-align:right;
+  line-height:1.35;
+  max-width:260px;
+}
+
+.acc-chevron{
+  display:inline-block;
+  width:18px;
+  text-align:center;
+  opacity:.7;
+  transform: rotate(-90deg);
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.acc-card[open] .acc-chevron{
+  transform: rotate(0deg);
+  opacity:1;
+}
+
+.acc-card:hover{
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 18%, var(--line));
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.06),
+    0 0 0 4px color-mix(in srgb, var(--accent) 10%, transparent);
+}
