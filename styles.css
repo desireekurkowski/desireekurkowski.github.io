@@ -1,18 +1,21 @@
-/* -----------------------
-   ROOT
------------------------ */
+/* =========================
+   Desiree Portfolio Styles
+   Light / Studio (Readable)
+========================= */
 
+/* ---- Theme Tokens ---- */
 :root{
-  --bg:#f6f6f4;
-  --surface:#f2f1ee;           /* softer than white */
-  --text:#1e1f22;
-  --muted:#6b6c70;
-  --line:rgba(0,0,0,.08);
-  --accent:#4f46e5;
+  --bg:#eeeeec;                 /* page background (slightly darker than cards) */
+  --surface:#ffffff;            /* card background */
+  --text:#1a1b1e;               /* primary text */
+  --muted:#4d4f55;              /* secondary text (higher contrast for readability) */
+  --line:rgba(0,0,0,.10);       /* borders */
+  --shadow:0 10px 30px rgba(0,0,0,.06);
+  --accent:#3f3c91;             /* subtle studio purple */
 }
 
+/* ---- Base ---- */
 *{ box-sizing:border-box; }
-
 html{ scroll-behavior:smooth; }
 
 body{
@@ -23,33 +26,34 @@ body{
   line-height:1.6;
 }
 
+/* Links */
+a{ color:inherit; }
 
-/* -----------------------
-   LAYOUT
------------------------ */
-
+/* ---- Layout ---- */
 .container{
   max-width:1100px;
   margin:0 auto;
   padding:0 24px;
 }
 
-.section{ padding:80px 0; }
+.section{
+  padding:72px 0;
+}
 
-.hero{ padding:100px 0 80px; }
+.section.alt{
+  background:rgba(255,255,255,.35);
+  border-top:1px solid rgba(0,0,0,.06);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
 
-
-/* -----------------------
-   HEADER
------------------------ */
-
+/* ---- Header / Nav ---- */
 .header{
   position:sticky;
   top:0;
-  background:rgba(246,246,244,.85);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid var(--line);
   z-index:10;
+  background:rgba(238,238,236,.90);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(0,0,0,.08);
 }
 
 .nav{
@@ -59,122 +63,205 @@ body{
   padding:16px 0;
 }
 
-.nav a{
+.logo{
   text-decoration:none;
-  color:var(--muted);
-  font-size:14px;
-  margin-left:24px;
+  font-weight:600;
+  letter-spacing:.2px;
+  color:var(--accent);
 }
 
-.nav a:hover{ color:var(--text); }
+/* Right nav links */
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
 
+.navlinks a{
+  text-decoration:none;
+  font-size:14px;
+  color:var(--muted);
+}
 
-/* -----------------------
-   TYPOGRAPHY
------------------------ */
+.navlinks a:hover{
+  color:var(--text);
+}
+
+/* Email button in nav */
+.cta{
+  text-decoration:none;
+  border:1px solid rgba(0,0,0,.10);
+  border-radius:10px;
+  padding:8px 12px;
+  font-size:13px;
+  color:var(--accent);
+  background:rgba(255,255,255,.55);
+}
+
+.cta:hover{
+  background:rgba(255,255,255,.85);
+}
+
+/* Mobile */
+@media (max-width:900px){
+  .navlinks{ display:none; }
+}
+
+/* ---- Hero ---- */
+.hero{
+  padding:92px 0 64px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1.3fr .9fr;
+  gap:40px;
+}
+
+@media (max-width:900px){
+  .hero-grid{ grid-template-columns:1fr; }
+}
+
+.pill{
+  display:inline-block;
+  padding:6px 12px;
+  border:1px solid rgba(0,0,0,.10);
+  border-radius:999px;
+  font-size:12px;
+  color:var(--muted);
+  background:rgba(255,255,255,.55);
+  margin-bottom:22px;
+}
 
 h1{
   font-size:48px;
   line-height:1.1;
-  margin:16px 0 24px;
-  font-weight:600;
+  margin:0 0 18px;
+  font-weight:700;
+  letter-spacing:-.2px;
 }
 
-h2{
-  font-size:24px;
-  margin-bottom:12px;
-  font-weight:600;
+.subhead{
+  font-size:18px;
+  margin:0 0 14px;
+  color:var(--text);
+  font-weight:500;
 }
 
-p{
-  color:var(--muted);
-  font-size:16px;
-}
-
-.eyebrow{
-  display:inline-block;
-  padding:6px 14px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  font-size:12px;
+.body{
+  font-size:17px;
+  line-height:1.7;
   color:var(--muted);
 }
 
-
-/* -----------------------
-   GRID
------------------------ */
-
-.grid{ display:grid; gap:24px; }
-
-.grid-2{ grid-template-columns:1fr 1fr; }
-
-@media (max-width:900px){
-  .grid-2{ grid-template-columns:1fr; }
+.hero-actions{
+  margin-top:22px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
+/* ---- Section headings ---- */
+.section-head{
+  margin-bottom:26px;
+}
 
-/* -----------------------
-   CARDS
------------------------ */
+.section-head h2{
+  margin:0 0 8px;
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:-.1px;
+}
 
+.section-head p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ---- Cards ---- */
 .card{
   background:var(--surface);
-  border:1px solid var(--line);
-  border-radius:12px;
-  padding:28px;
+  border:1px solid rgba(0,0,0,.10);
+  border-radius:14px;
+  padding:26px;
+  box-shadow:var(--shadow);
 }
 
+/* ---- Grids ---- */
+.grid2{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
 
-/* -----------------------
-   BUTTONS (UPGRADED)
------------------------ */
+@media (max-width:900px){
+  .grid2,.grid3{ grid-template-columns:1fr; }
+}
 
+.span2{ grid-column:1 / -1; }
+
+/* ---- Lists ---- */
+.checklist{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.checklist li{
+  margin:0 0 10px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.bullets{
+  padding-left:18px;
+  margin:12px 0 0;
+  color:var(--muted);
+}
+
+.bullets li{
+  margin:0 0 8px;
+  font-size:14px;
+}
+
+/* ---- Buttons ---- */
 .btn{
   display:inline-block;
   padding:10px 18px;
-  border-radius:8px;
-  border:1px solid var(--line);
+  border-radius:10px;
+  border:1px solid rgba(0,0,0,.10);
   text-decoration:none;
   font-size:14px;
+  background:rgba(255,255,255,.65);
   color:var(--text);
-  background:transparent;
-  transition:background .2s ease, border-color .2s ease, transform .2s ease;
-  margin-right:12px;
+  transition:transform .15s ease, background .15s ease, border-color .15s ease;
 }
 
 .btn:hover{
-  background:#e9e8e4;
-  border-color:rgba(0,0,0,.10);
   transform:translateY(-1px);
+  background:rgba(255,255,255,.90);
+  border-color:rgba(0,0,0,.14);
 }
 
 .btn.primary{
-  background:#e9e8e4;
+  background:var(--accent);
+  color:#fff;
+  border-color:transparent;
 }
 
 .btn.primary:hover{
-  background:#dfded9;
+  background:#35327d;
 }
 
-
-/* -----------------------
-   SMALL TEXT
------------------------ */
-
-.small{
-  font-size:14px;
-  color:var(--muted);
-}
-
-
-/* -----------------------
-   FOOTER
------------------------ */
-
+/* ---- Footer ---- */
 .footer{
-  padding:60px 0;
-  border-top:1px solid var(--line);
-  font-size:14px;
+  padding:44px 0;
+  border-top:1px solid rgba(0,0,0,.08);
   color:var(--muted);
+  font-size:13px;
+}
+
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
 }
