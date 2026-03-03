@@ -759,3 +759,35 @@ h3{
     0 10px 26px rgba(0,0,0,.06),
     0 0 0 4px color-mix(in srgb, var(--accent) 10%, transparent);
 }
+
+/* Selected Work — make accordion header typography match site headings */
+.acc-card > summary{
+  padding: 16px 18px;
+  align-items: center; /* keep title/meta aligned like other cards */
+}
+
+.acc-title{
+  font-weight: 700;
+  font-size: 16px;          /* matches your stronger heading feel */
+  line-height: 1.2;
+  letter-spacing: -0.15px;  /* closer to h1/h2 treatment */
+  color: var(--text);
+}
+
+.acc-meta{
+  font-size: 13px;     /* closer to your body size */
+  color: var(--muted); /* match other muted text */
+  line-height: 1.35;
+}
+
+/* Chevron consistent with your style */
+.acc-chevron{
+  opacity: .55;
+}
+
+/* Optional: make hover glow slightly less intense */
+.acc-card:hover{
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.05),
+    0 0 0 3px color-mix(in srgb, var(--accent) 8%, transparent);
+}
