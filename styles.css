@@ -196,7 +196,12 @@ h3{
   background:var(--surface);
   border:1px solid var(--line);
   border-radius:14px;
-  padding:16px;
+  padding:14px;
+}
+
+.card p{
+  font-size:14px;
+  line-height:1.55;
 }
 
 /* Grids */
