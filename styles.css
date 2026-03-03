@@ -126,7 +126,7 @@ h3{
 .hero-art{
   margin-top:38px;
 }
-
+}
 @media (max-width:900px){
   .hero-grid{ grid-template-columns:1fr; }
 }
