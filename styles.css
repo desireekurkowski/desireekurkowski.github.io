@@ -1,17 +1,16 @@
 /* =========================
    Desiree Portfolio Styles
-   Light / Studio (Readable)
+   Light Studio (Readable + Crisp)
 ========================= */
 
 /* ---- Theme Tokens ---- */
 :root{
-  --bg:#eeeeec;                 /* page background (slightly darker than cards) */
+  --bg:#f2f2f0;                 /* page background */
   --surface:#ffffff;            /* card background */
-  --text:#1a1b1e;               /* primary text */
-  --muted:#4d4f55;              /* secondary text (higher contrast for readability) */
-  --line:rgba(0,0,0,.10);       /* borders */
-  --shadow:0 10px 30px rgba(0,0,0,.06);
-  --accent:#3f3c91;             /* subtle studio purple */
+  --text:#141517;               /* primary text */
+  --muted:#4a4c52;              /* secondary text */
+  --line:rgba(0,0,0,.08);       /* borders */
+  --accent:#3f3c91;             /* studio purple */
 }
 
 /* ---- Base ---- */
@@ -23,10 +22,9 @@ body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
+  line-height:1.65;
 }
 
-/* Links */
 a{ color:inherit; }
 
 /* ---- Layout ---- */
@@ -42,8 +40,8 @@ a{ color:inherit; }
 
 .section.alt{
   background:rgba(255,255,255,.35);
-  border-top:1px solid rgba(0,0,0,.06);
-  border-bottom:1px solid rgba(0,0,0,.06);
+  border-top:1px solid rgba(0,0,0,.05);
+  border-bottom:1px solid rgba(0,0,0,.05);
 }
 
 /* ---- Header / Nav ---- */
@@ -51,9 +49,9 @@ a{ color:inherit; }
   position:sticky;
   top:0;
   z-index:10;
-  background:rgba(238,238,236,.90);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid rgba(0,0,0,.08);
+  background:rgba(242,242,240,.90);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(0,0,0,.06);
 }
 
 .nav{
@@ -70,7 +68,6 @@ a{ color:inherit; }
   color:var(--accent);
 }
 
-/* Right nav links */
 .navlinks{
   display:flex;
   align-items:center;
@@ -87,7 +84,7 @@ a{ color:inherit; }
   color:var(--text);
 }
 
-/* Email button in nav */
+/* top-right Email */
 .cta{
   text-decoration:none;
   border:1px solid rgba(0,0,0,.10);
@@ -95,27 +92,27 @@ a{ color:inherit; }
   padding:8px 12px;
   font-size:13px;
   color:var(--accent);
-  background:rgba(255,255,255,.55);
+  background:rgba(255,255,255,.65);
 }
 
 .cta:hover{
-  background:rgba(255,255,255,.85);
+  background:rgba(255,255,255,.95);
 }
 
-/* Mobile */
 @media (max-width:900px){
   .navlinks{ display:none; }
 }
 
 /* ---- Hero ---- */
 .hero{
-  padding:92px 0 64px;
+  padding:120px 0 80px;
 }
 
 .hero-grid{
   display:grid;
   grid-template-columns: 1.3fr .9fr;
-  gap:40px;
+  gap:44px;
+  align-items:start;
 }
 
 @media (max-width:900px){
@@ -133,12 +130,13 @@ a{ color:inherit; }
   margin-bottom:22px;
 }
 
+/* Headline + text */
 h1{
-  font-size:48px;
-  line-height:1.1;
+  font-size:52px;
+  line-height:1.08;
   margin:0 0 18px;
   font-weight:700;
-  letter-spacing:-.2px;
+  letter-spacing:-.3px;
 }
 
 .subhead{
@@ -150,10 +148,11 @@ h1{
 
 .body{
   font-size:17px;
-  line-height:1.7;
+  line-height:1.75;
   color:var(--muted);
 }
 
+/* Buttons under hero copy */
 .hero-actions{
   margin-top:22px;
   display:flex;
@@ -182,10 +181,9 @@ h1{
 /* ---- Cards ---- */
 .card{
   background:var(--surface);
-  border:1px solid rgba(0,0,0,.10);
-  border-radius:14px;
-  padding:26px;
-  box-shadow:var(--shadow);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:32px;
 }
 
 /* ---- Grids ---- */
@@ -225,22 +223,23 @@ h1{
 /* ---- Buttons ---- */
 .btn{
   display:inline-block;
-  padding:10px 18px;
-  border-radius:10px;
+  padding:11px 18px;
+  border-radius:12px;
   border:1px solid rgba(0,0,0,.10);
   text-decoration:none;
   font-size:14px;
-  background:rgba(255,255,255,.65);
+  background:rgba(255,255,255,.75);
   color:var(--text);
   transition:transform .15s ease, background .15s ease, border-color .15s ease;
 }
 
 .btn:hover{
   transform:translateY(-1px);
-  background:rgba(255,255,255,.90);
+  background:rgba(255,255,255,.98);
   border-color:rgba(0,0,0,.14);
 }
 
+/* Primary button is clearly primary */
 .btn.primary{
   background:var(--accent);
   color:#fff;
