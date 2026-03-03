@@ -657,3 +657,33 @@ h3{
     to{ transform: translateY(0); opacity: 1; }
   }
 }
+ <div class="accordion">
+
+      <!-- 1 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <span class="acc-title">Behavioral Urgency Framework</span>
+          </div>
+          <span class="acc-meta">Double-digit lift in CTR • Scaled pattern</span>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test / Concept:</strong> Countdown + urgency messaging at a high-intent moment</p>
+
+          <p><strong>Scenario:</strong> Teams needed a clear way to communicate a time-sensitive promotion without overwhelming the page or hurting conversion.</p>
+
+          <p><strong>Hypothesis:</strong> If we add a simple countdown and tighten urgency copy near the primary CTA, engagement will increase (CTR) while downstream conversion holds steady or improves.</p>
+
+          <p><strong>What I did:</strong> Designed the test plan, aligned on success metrics + guardrails, partnered with design/dev on the UI, and monitored performance daily to inform rollout decisions.</p>
+
+          <p><strong>Outcome:</strong> Double-digit lift in engagement (CTR). Scaled as a reusable pattern for major site moments.</p>
+
+          <div class="meta-row">
+            <span class="tag">UX messaging</span>
+            <span class="tag">Urgency</span>
+            <span class="tag">Experimentation</span>
+          </div>
+        </div>
+      </details>
