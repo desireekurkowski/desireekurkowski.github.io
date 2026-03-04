@@ -928,9 +928,28 @@ h2{
 }
 
 .pattern-demo__label{
-  font-size: 13px;
-  color: var(--muted);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+
+  color: var(--accent);
+  background: rgba(63,60,145,.08);
+  border: 1px solid rgba(63,60,145,.18);
+  padding: 6px 10px;
+  border-radius: 999px;
+
   margin-bottom: 10px;
+}
+
+.pattern-demo{
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
 }
 
 /* Row: "Deal ends in" + timer pill */
