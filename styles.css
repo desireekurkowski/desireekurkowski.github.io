@@ -1151,3 +1151,9 @@ h2{
   color: var(--muted);
   line-height: 1.45;
 }
+
+.pattern-divider{
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+}
