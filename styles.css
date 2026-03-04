@@ -1041,3 +1041,113 @@ h2{
   align-items: center;
   gap: 14px;
 }
+
+/* =========================
+   Pattern Demo (shared)
+========================= */
+.pattern-wrap{
+  margin-top: 14px;
+}
+
+.pattern-chip{
+  display:inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+
+  padding: 10px 14px;
+  border-radius: 999px;
+
+  color: var(--accent);
+  background: rgba(63,60,145,.06);
+  border: 1px solid rgba(63,60,145,.18);
+}
+
+.pattern-card{
+  margin-top: 10px;
+
+  background: rgba(63,60,145,.04);
+  border: 1px solid rgba(63,60,145,.12);
+  border-radius: 12px;
+
+  padding: 18px 20px;
+}
+
+/* =========================
+   Wayfinding Demo
+========================= */
+.wf-head{
+  margin-bottom: 12px;
+}
+
+.wf-title{
+  font-weight: 650;
+  letter-spacing: -0.1px;
+  font-size: 15.5px;
+  line-height: 1.25;
+}
+
+.wf-sub{
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.wf-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.wf-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  background: rgba(255,255,255,.80);
+  border: 1px solid rgba(0,0,0,.08);
+  color: var(--text);
+
+  transition: transform .15s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+
+/* Primary CTA look */
+.wf-btn--primary{
+  background: var(--accent);
+  border-color: transparent;
+  color: #fff;
+}
+
+/* Purple hover glow (matches your site) */
+.wf-btn:hover{
+  transform: translateY(-1px);
+  border-color: rgba(63,60,145,.20);
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.05),
+    0 0 0 3px rgba(63,60,145,.10);
+  background: rgba(255,255,255,.98);
+}
+
+.wf-btn--primary:hover{
+  background: #35327d;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.06),
+    0 0 0 3px rgba(63,60,145,.12);
+}
+
+.wf-note{
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+}
