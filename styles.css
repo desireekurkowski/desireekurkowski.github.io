@@ -917,3 +917,73 @@ h2{
   border-radius:999px;
   letter-spacing:.02em;
 }
+
+/* =========================
+   Countdown Pattern Demo (TMO-style)
+   Paste at bottom of styles.css
+========================= */
+
+.pattern-demo{
+  margin-top: 14px;
+}
+
+.pattern-demo__label{
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* Row: "Deal ends in" + timer pill */
+.countdown{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.countdown__kicker{
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Purple pill timer */
+.countdown__row{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--accent);
+  color: #fff;
+
+  padding: 8px 12px;
+  border-radius: 999px;
+
+  box-shadow: 0 8px 18px rgba(63,60,145,.18);
+}
+
+/* Each number+label group */
+.timebox{
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.timebox__num{
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  line-height: 1;
+}
+
+.timebox__label{
+  font-size: 12px;
+  opacity: .9;
+  line-height: 1;
+}
+
+/* Separators between groups */
+.time-sep{
+  opacity: .6;
+  font-size: 12px;
+  line-height: 1;
+}
