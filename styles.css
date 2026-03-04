@@ -1157,3 +1157,100 @@ h2{
   padding-top:16px;
   border-top:1px solid var(--line);
 }
+/* =========================
+   Decision Clarity Pattern
+========================= */
+
+.dc-head{
+  margin-bottom:14px;
+}
+
+.dc-title{
+  font-weight:650;
+  font-size:16px;
+  letter-spacing:-0.1px;
+}
+
+.dc-sub{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:4px;
+}
+
+.dc-plans{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.dc-plan{
+  flex:1;
+  min-width:180px;
+
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:12px;
+
+  padding:16px;
+
+  background:white;
+}
+
+.dc-plan-name{
+  font-weight:600;
+}
+
+.dc-price{
+  font-size:20px;
+  font-weight:700;
+  margin:6px 0 10px;
+}
+
+.dc-features{
+  list-style:none;
+  padding:0;
+  margin:0 0 14px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.dc-features li{
+  margin-bottom:4px;
+}
+
+.dc-btn{
+  width:100%;
+  padding:8px 10px;
+  border-radius:8px;
+
+  border:1px solid rgba(0,0,0,.1);
+  background:white;
+
+  font-size:13px;
+  cursor:pointer;
+}
+
+.dc-btn--primary{
+  background:var(--accent);
+  border-color:transparent;
+  color:white;
+}
+
+.dc-plan--recommended{
+  border:2px solid var(--accent);
+  position:relative;
+}
+
+.dc-badge{
+  position:absolute;
+  top:-10px;
+  right:10px;
+
+  font-size:11px;
+  font-weight:600;
+
+  background:var(--accent);
+  color:white;
+
+  padding:4px 8px;
+  border-radius:999px;
+}
