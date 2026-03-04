@@ -493,7 +493,13 @@
 </script>
 <script>
 
-const endDate = new Date("2027-01-01").getTime();
+// 3 days from now at 11:59pm
+const endDate = new Date(
+  new Date().getFullYear(),
+  new Date().getMonth(),
+  new Date().getDate() + 3,
+  23, 59, 0
+).getTime();
 
 function updateCountdown(){
 
