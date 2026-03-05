@@ -1375,3 +1375,38 @@ h2{
   max-height: none !important;
   height: auto !important;
 }
+
+
+/* FORCE: Guiding Principles cards are 2-column (text left, image right) */
+.guiding-principles .pillar-card{
+  display:grid !important;
+  grid-template-columns: 1.35fr .65fr !important;
+  gap:24px !important;
+  align-items:center !important;
+}
+
+/* Make sure text + media sit in their grid cells */
+.guiding-principles .pillar-text{ min-width:0; }
+.guiding-principles .pillar-media{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+}
+
+/* Image sizing */
+.guiding-principles .pillar-media img{
+  width:260px !important;
+  height:auto !important;
+  max-height:none !important;
+  display:block !important;
+}
+
+/* Mobile stacks */
+@media (max-width:900px){
+  .guiding-principles .pillar-card{
+    grid-template-columns:1fr !important;
+  }
+  .guiding-principles .pillar-media{
+    margin-top:14px !important;
+  }
+}
