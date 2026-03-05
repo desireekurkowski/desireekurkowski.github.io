@@ -1350,3 +1350,9 @@ h2{
   height: auto;
   display: block;
 }
+/* FORCE larger pillar graphics (override earlier max-height rule) */
+.pillar-media img{
+  width:260px !important;
+  max-height:none !important;
+  height:auto !important;
+}
