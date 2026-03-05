@@ -1256,79 +1256,89 @@ h2{
 }
 
 /* =========================
-   Guiding Pillars (with mini art tiles)
+   Guiding Principles (Alternating Pillars)
 ========================= */
 
-.pillars-grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 14px;
+.pillar-stack{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-top:16px;
 }
 
-@media (max-width: 900px){
-  .pillars-grid{ grid-template-columns: 1fr; }
+.pillar-row{
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap:16px;
+  align-items:stretch;
 }
+
+.pillar-row--flip .pillar-card{ order:2; }
+.pillar-row--flip .pillar-media{ order:1; }
 
 .pillar-card{
-  padding: 16px;
-  transition: transform .16s ease, box-shadow .20s ease, border-color .20s ease;
-}
-
-.pillar-card:hover{
-  transform: translateY(-2px);
-  border-color: rgba(63,60,145,.20);
-  box-shadow:
-    0 10px 26px rgba(0,0,0,.05),
-    0 0 0 3px rgba(63,60,145,.08);
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px 18px;
 }
 
 .pillar-top{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  margin-bottom: 10px;
+  gap:12px;
+  margin-bottom:8px;
 }
 
-/* The “image” */
-.pillar-art{
-  width: 56px;
-  height: 40px;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,.06);
-  box-shadow: 0 10px 22px rgba(0,0,0,.05);
+.pillar-card h3{
+  margin:0;
+  font-size: var(--card-title-size, 15.5px);
+  font-weight: var(--card-title-weight, 600);
+  letter-spacing: var(--card-title-tracking, -0.1px);
 }
 
-/* Subtle “art” variations per pillar */
-.pillar-art--insight{
-  background:
-    radial-gradient(70% 90% at 25% 30%, rgba(63,60,145,.35), transparent 60%),
-    radial-gradient(60% 80% at 75% 70%, rgba(63,60,145,.18), transparent 55%),
-    linear-gradient(135deg, rgba(255,255,255,.95), rgba(242,242,240,.8));
+.pillar-num{
+  font-size:12px;
+  color:var(--accent);
+  border:1px solid rgba(63,60,145,.22);
+  background:rgba(63,60,145,.06);
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:600;
 }
 
-.pillar-art--clarity{
-  background:
-    linear-gradient(135deg, rgba(63,60,145,.22), transparent 55%),
-    radial-gradient(65% 80% at 70% 35%, rgba(63,60,145,.22), transparent 55%),
-    linear-gradient(135deg, rgba(255,255,255,.95), rgba(242,242,240,.8));
+.pillar-media{
+  background:rgba(255,255,255,.65);
+  border:1px solid var(--line);
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  padding:10px;
 }
 
-.pillar-art--validation{
-  background:
-    radial-gradient(70% 90% at 35% 70%, rgba(63,60,145,.26), transparent 55%),
-    linear-gradient(25deg, rgba(63,60,145,.18), transparent 55%),
-    linear-gradient(135deg, rgba(255,255,255,.95), rgba(242,242,240,.8));
+.pillar-media img{
+  width:100%;
+  height:auto;
+  max-height:170px;
+  object-fit:contain;
+  display:block;
+  border-radius:10px;
+  opacity:.98;
 }
 
-/* Small number badge */
-.pillar-kicker{
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .6px;
-  color: var(--accent);
-  background: rgba(63,60,145,.06);
-  border: 1px solid rgba(63,60,145,.16);
-  padding: 6px 10px;
-  border-radius: 999px;
+/* Mobile stack */
+@media (max-width:900px){
+  .pillar-row{
+    grid-template-columns:1fr;
+  }
+  .pillar-row--flip .pillar-card,
+  .pillar-row--flip .pillar-media{
+    order:unset;
+  }
+  .pillar-media img{
+    max-height:190px;
+  }
 }
