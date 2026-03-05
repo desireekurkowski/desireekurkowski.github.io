@@ -1268,9 +1268,9 @@ h2{
 
 .pillar-row{
   display:grid;
-  grid-template-columns: 1.15fr .85fr;
-  gap:16px;
-  align-items:center; /* <-- change this */
+  grid-template-columns: 1fr 1fr;
+  gap:24px;
+  align-items:center;
 }
 
 .pillar-row--flip .pillar-card{ order:2; }
