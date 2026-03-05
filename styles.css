@@ -1357,9 +1357,21 @@ h2{
   height:auto !important;
 }
 
-/* DEBUG: prove this stylesheet is loading */
+/* FINAL: Guiding Principles layout */
 .pillar-row{
-  outline: 4px solid hotpink !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 40px !important;
+  gap: 28px !important;
+  align-items: center !important;
+}
+.pillar-media{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.pillar-media img{
+  width: 260px !important;
+  max-height: none !important;
+  height: auto !important;
 }
