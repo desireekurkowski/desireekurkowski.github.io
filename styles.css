@@ -1254,3 +1254,81 @@ h2{
   padding:4px 8px;
   border-radius:999px;
 }
+
+/* =========================
+   Guiding Pillars (with mini art tiles)
+========================= */
+
+.pillars-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 900px){
+  .pillars-grid{ grid-template-columns: 1fr; }
+}
+
+.pillar-card{
+  padding: 16px;
+  transition: transform .16s ease, box-shadow .20s ease, border-color .20s ease;
+}
+
+.pillar-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(63,60,145,.20);
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.05),
+    0 0 0 3px rgba(63,60,145,.08);
+}
+
+.pillar-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+
+/* The “image” */
+.pillar-art{
+  width: 56px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 10px 22px rgba(0,0,0,.05);
+}
+
+/* Subtle “art” variations per pillar */
+.pillar-art--insight{
+  background:
+    radial-gradient(70% 90% at 25% 30%, rgba(63,60,145,.35), transparent 60%),
+    radial-gradient(60% 80% at 75% 70%, rgba(63,60,145,.18), transparent 55%),
+    linear-gradient(135deg, rgba(255,255,255,.95), rgba(242,242,240,.8));
+}
+
+.pillar-art--clarity{
+  background:
+    linear-gradient(135deg, rgba(63,60,145,.22), transparent 55%),
+    radial-gradient(65% 80% at 70% 35%, rgba(63,60,145,.22), transparent 55%),
+    linear-gradient(135deg, rgba(255,255,255,.95), rgba(242,242,240,.8));
+}
+
+.pillar-art--validation{
+  background:
+    radial-gradient(70% 90% at 35% 70%, rgba(63,60,145,.26), transparent 55%),
+    linear-gradient(25deg, rgba(63,60,145,.18), transparent 55%),
+    linear-gradient(135deg, rgba(255,255,255,.95), rgba(242,242,240,.8));
+}
+
+/* Small number badge */
+.pillar-kicker{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .6px;
+  color: var(--accent);
+  background: rgba(63,60,145,.06);
+  border: 1px solid rgba(63,60,145,.16);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
