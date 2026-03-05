@@ -1356,3 +1356,10 @@ h2{
   max-height:none !important;
   height:auto !important;
 }
+
+/* DEBUG: prove this stylesheet is loading */
+.pillar-row{
+  outline: 4px solid hotpink !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 40px !important;
+}
