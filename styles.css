@@ -1342,3 +1342,22 @@ h2{
     max-height:190px;
   }
 }
+
+/* Pillar graphics: remove “box” and make image float */
+.pillar-media {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Increase graphic size */
+.pillar-media img {
+  width: 220px;   /* adjust 200–240 if needed */
+  height: auto;
+  display: block;
+}
