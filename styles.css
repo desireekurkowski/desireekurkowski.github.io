@@ -1262,7 +1262,7 @@ h2{
 .pillar-stack{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:28px;
   margin-top:16px;
 }
 
@@ -1270,7 +1270,7 @@ h2{
   display:grid;
   grid-template-columns: 1.15fr .85fr;
   gap:16px;
-  align-items:stretch;
+  align-items:center; /* <-- change this */
 }
 
 .pillar-row--flip .pillar-card{ order:2; }
@@ -1306,17 +1306,6 @@ h2{
   padding:6px 10px;
   border-radius:999px;
   font-weight:600;
-}
-
-.pillar-media{
-  background:rgba(255,255,255,.65);
-  border:1px solid var(--line);
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  padding:10px;
 }
 
 .pillar-media img{
@@ -1357,7 +1346,7 @@ h2{
 
 /* Increase graphic size */
 .pillar-media img {
-  width: 220px;   /* adjust 200–240 if needed */
+  width: 260px;   /* adjust 200–240 if needed */
   height: auto;
   display: block;
 }
