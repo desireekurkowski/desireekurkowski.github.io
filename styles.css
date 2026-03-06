@@ -1410,3 +1410,45 @@ h2{
     margin-top:14px !important;
   }
 }
+
+/* =========================
+   Guiding Principles FINAL layout
+========================= */
+
+.pillar-card{
+  display:grid !important;
+  grid-template-columns:220px 1fr;
+  gap:24px;
+  align-items:center;
+
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:22px;
+}
+
+/* Reverse layout for pillar 2 */
+.pillar-card--reverse{
+  grid-template-columns:1fr 220px !important;
+}
+
+.pillar-media{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.pillar-media img{
+  width:180px;
+  max-width:180px;
+  height:auto;
+  display:block;
+}
+
+/* Mobile stack */
+@media (max-width:900px){
+  .pillar-card,
+  .pillar-card--reverse{
+    grid-template-columns:1fr !important;
+  }
+}
