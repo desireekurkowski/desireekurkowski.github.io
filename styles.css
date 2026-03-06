@@ -142,6 +142,12 @@ h3{
   box-shadow:none;
 }
 
+.hero-art img{
+  width:100%;
+  max-width:600px;
+  display:block;
+}
+
 @media (max-width:900px){
   .hero-grid{
     grid-template-columns:1fr;
