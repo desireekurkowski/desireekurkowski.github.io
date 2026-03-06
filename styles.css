@@ -1494,3 +1494,11 @@ h2{
 .pillar-card{
   box-shadow: 0 6px 20px rgba(0,0,0,.04);
 }
+
+.pillar-stack{
+  gap: 34px !important;
+}
+
+.pillar-card{
+  padding: 26px !important;
+}
