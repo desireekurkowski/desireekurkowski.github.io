@@ -1470,3 +1470,27 @@ h2{
   text-align: left !important;
   margin: 0 !important;
 }
+
+/* =========================
+   Guiding Principles – Polish
+========================= */
+
+/* tighten text column so badge + title align better */
+.pillar-text{
+  max-width: 620px;
+}
+
+/* increase space between cards */
+.pillar-stack{
+  gap: 26px;
+}
+
+/* soften graphics slightly so text is primary */
+.pillar-media img{
+  opacity: .92;
+}
+
+/* subtle elevation to match rest of UI */
+.pillar-card{
+  box-shadow: 0 6px 20px rgba(0,0,0,.04);
+}
