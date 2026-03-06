@@ -1452,3 +1452,6 @@ h2{
     grid-template-columns:1fr !important;
   }
 }
+.pillar-card--reverse .pillar-text{
+  text-align: left;
+}
