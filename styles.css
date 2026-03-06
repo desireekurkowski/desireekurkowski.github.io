@@ -1455,3 +1455,18 @@ h2{
 .pillar-card--reverse .pillar-text{
   text-align: left;
 }
+
+/* Fix pillar heading alignment */
+.pillar-top{
+  justify-content: flex-start !important;
+  gap: 12px !important;
+}
+
+.pillar-text{
+  text-align: left !important;
+}
+
+.pillar-card h3{
+  text-align: left !important;
+  margin: 0 !important;
+}
