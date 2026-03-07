@@ -768,7 +768,7 @@ h3{
 
 /* Chevron consistent with your style */
 .acc-chevron{
-  opacity: .55;
+  opacity: 1;
 }
 
 /* Optional: make hover glow slightly less intense */
