@@ -422,7 +422,7 @@
             </div>
           </details>
 
-          <!-- 4 -->
+                    <!-- 4 -->
           <details class="acc-card">
             <summary>
               <div class="acc-left">
@@ -466,4 +466,159 @@
                         <li>Email support</li>
                       </ul>
 
-                      <button class="dc-btn">Select plan<
+                      <button class="dc-btn" type="button">Select plan</button>
+                    </div>
+
+                    <div class="dc-plan dc-plan--recommended">
+                      <div class="dc-badge">Recommended</div>
+
+                      <div class="dc-plan-name">Pro</div>
+                      <div class="dc-price">$19/mo</div>
+
+                      <ul class="dc-features">
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                      </ul>
+
+                      <button class="dc-btn dc-btn--primary" type="button">Select plan</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="meta-row">
+                <span class="tag">Decision design</span>
+                <span class="tag">Copy strategy</span>
+                <span class="tag">UX testing</span>
+              </div>
+            </div>
+          </details>
+
+          <!-- 5 -->
+          <details class="acc-card span2">
+            <summary>
+              <div class="acc-left">
+                <span class="acc-chevron">▾</span>
+                <div class="acc-title-wrap">
+                  <span class="acc-title">Additional Experiment Themes</span>
+                  <span class="acc-meta">Messaging, pricing clarity, app adoption, trust signals, and personalization</span>
+                </div>
+              </div>
+            </summary>
+
+            <div class="acc-body">
+              <p>
+                In addition to the featured examples above, I have led and supported experiments across a wider set of themes that shaped merchandising strategy, product education, behavioral nudges, and decision architecture across the journey.
+              </p>
+
+              <p><strong>Messaging and Offer Framing</strong><br>
+                Tests focused on promotional framing, CTA language, value articulation, and message clarity to increase engagement without weakening conversion quality.
+              </p>
+
+              <p><strong>Pricing Clarity and Plan Communication</strong><br>
+                Work aimed at making pricing and plan structure easier to understand through ribbons, framing, plan explanations, and simpler value communication at decision points.
+              </p>
+
+              <p><strong>App Adoption and Behavioral Nudges</strong><br>
+                Contextual prompts intended to increase engagement with key product experiences and encourage movement into the next best action.
+              </p>
+
+              <p><strong>Trust Signals and Informational Framing</strong><br>
+                Experiments involving reviews, compatibility reminders, product education, and support content that helped users feel more confident progressing.
+              </p>
+
+              <p><strong>Contextual Personalization</strong><br>
+                Tests that aligned merchandising, messaging, and promotional relevance to user context, device type, behavioral signals, or audience attributes.
+              </p>
+
+              <div class="meta-row">
+                <span class="tag">Messaging</span>
+                <span class="tag">Pricing clarity</span>
+                <span class="tag">App adoption</span>
+                <span class="tag">Trust signals</span>
+                <span class="tag">Personalization</span>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Reach out directly by email.</p>
+        </div>
+
+        <div class="card contact-card">
+          <p><strong>Email:</strong> <a href="mailto:desiree.kurkowski@gmail.com">desiree.kurkowski@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="y"></span> Desiree Kurkowski</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+    (function () {
+      const dialog = document.getElementById("teamsDialog");
+      const titleEl = document.getElementById("teamsDialogTitle");
+      const bodyEl = document.getElementById("teamsDialogBody");
+
+      if (!dialog) return;
+
+      document.querySelectorAll(".teams-item").forEach(btn => {
+        btn.addEventListener("click", () => {
+          titleEl.textContent = btn.dataset.title || "Details";
+          bodyEl.textContent = btn.dataset.body || "";
+          dialog.showModal();
+        });
+      });
+
+      dialog.querySelector(".teams-dialog__close")?.addEventListener("click", () => dialog.close());
+
+      dialog.addEventListener("click", (e) => {
+        const inner = dialog.querySelector(".teams-dialog__inner");
+        if (inner && !inner.contains(e.target)) dialog.close();
+      });
+    })();
+  </script>
+
+  <script>
+    const endDate = new Date(
+      new Date().getFullYear(),
+      new Date().getMonth(),
+      new Date().getDate() + 3,
+      23, 59, 0
+    ).getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((distance / (1000 * 60)) % 60);
+
+      document.getElementById("cdDays").textContent = days;
+      document.getElementById("cdHours").textContent = hours;
+      document.getElementById("cdMins").textContent = mins;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
+  </script>
+</body>
+</html>
