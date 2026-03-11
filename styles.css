@@ -284,17 +284,22 @@ h3{
   }
 }
 
+/* =========================
+   Teams Section
+========================= */
+
 .teams-item{
   width:100%;
   text-align:left;
   background:rgba(255,255,255,.88);
   border:1px solid rgba(0,0,0,.05);
   border-radius:16px;
-  padding:16px 18px;
+  padding:16px 42px 16px 18px; /* extra space for arrow */
   color:var(--text);
   font-size:14px;
   line-height:1.5;
   cursor:pointer;
+  position:relative;
   transition:
     transform .18s ease,
     box-shadow .22s ease,
@@ -314,6 +319,24 @@ h3{
 .teams-item:focus-visible{
   outline:2px solid rgba(63,60,145,.35);
   outline-offset:3px;
+}
+
+/* clickable arrow indicator */
+
+.teams-item::after{
+  content:"→";
+  position:absolute;
+  right:16px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:16px;
+  color:rgba(0,0,0,.35);
+  transition:transform .18s ease, color .18s ease;
+}
+
+.teams-item:hover::after{
+  transform:translateY(-50%) translateX(4px);
+  color:var(--accent);
 }
 
 /* Modal */
