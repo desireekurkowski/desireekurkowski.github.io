@@ -61,7 +61,67 @@
         </div>
       </div>
     </section>
+<!-- TEAMS -->
+    <section class="section teams-section">
+      <div class="container teams-container">
+        <h2>Teams typically reach out when</h2>
 
+        <ul class="teams-list">
+          <li>
+            <button
+              class="teams-item"
+              type="button"
+              data-title="Performance has plateaued"
+              data-body="Conversion or engagement has leveled off and the team wants a clear path to improvement instead of another round of random changes."
+            >
+              Performance has plateaued and growth is slowing
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="teams-item"
+              type="button"
+              data-title="Prioritization is unclear"
+              data-body="There are many ideas on the table, but the team needs a way to decide what to test first and how success should be measured."
+            >
+              Strong ideas exist but prioritization is unclear
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="teams-item"
+              type="button"
+              data-title="Confidence is needed before rollout"
+              data-body="A key flow is being redesigned and the team wants evidence that the change improves progression before it is fully shipped."
+            >
+              Key flows are being redesigned and confidence is needed before rollout
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="teams-item"
+              type="button"
+              data-title="More rigor is needed in experimentation"
+              data-body="The team wants clearer hypotheses, stronger guardrails, and measurement that goes beyond clicks so decisions are grounded in real outcomes."
+            >
+              There is a desire for more rigor in experimentation and measurement
+            </button>
+          </li>
+        </ul>
+
+        <dialog class="teams-dialog" id="teamsDialog">
+          <div class="teams-dialog__inner">
+            <button class="teams-dialog__close" type="button" aria-label="Close">✕</button>
+            <h3 class="teams-dialog__title" id="teamsDialogTitle"></h3>
+            <p class="teams-dialog__body" id="teamsDialogBody"></p>
+          </div>
+        </dialog>
+      </div>
+    </section>
+    
     <!-- GUIDING PRINCIPLES -->
     <section class="section" id="principles">
       <div class="container">
@@ -126,67 +186,7 @@
       </div>
     </section>
 
-    <!-- TEAMS -->
-    <section class="section teams-section">
-      <div class="container teams-container">
-        <h2>Teams typically reach out when</h2>
-
-        <ul class="teams-list">
-          <li>
-            <button
-              class="teams-item"
-              type="button"
-              data-title="Performance has plateaued"
-              data-body="Conversion or engagement has leveled off and the team wants a clear path to improvement instead of another round of random changes."
-            >
-              Performance has plateaued and growth is slowing
-            </button>
-          </li>
-
-          <li>
-            <button
-              class="teams-item"
-              type="button"
-              data-title="Prioritization is unclear"
-              data-body="There are many ideas on the table, but the team needs a way to decide what to test first and how success should be measured."
-            >
-              Strong ideas exist but prioritization is unclear
-            </button>
-          </li>
-
-          <li>
-            <button
-              class="teams-item"
-              type="button"
-              data-title="Confidence is needed before rollout"
-              data-body="A key flow is being redesigned and the team wants evidence that the change improves progression before it is fully shipped."
-            >
-              Key flows are being redesigned and confidence is needed before rollout
-            </button>
-          </li>
-
-          <li>
-            <button
-              class="teams-item"
-              type="button"
-              data-title="More rigor is needed in experimentation"
-              data-body="The team wants clearer hypotheses, stronger guardrails, and measurement that goes beyond clicks so decisions are grounded in real outcomes."
-            >
-              There is a desire for more rigor in experimentation and measurement
-            </button>
-          </li>
-        </ul>
-
-        <dialog class="teams-dialog" id="teamsDialog">
-          <div class="teams-dialog__inner">
-            <button class="teams-dialog__close" type="button" aria-label="Close">✕</button>
-            <h3 class="teams-dialog__title" id="teamsDialogTitle"></h3>
-            <p class="teams-dialog__body" id="teamsDialogBody"></p>
-          </div>
-        </dialog>
-      </div>
-    </section>
-
+    
     <!-- APPROACH -->
     <section id="approach" class="section">
       <div class="container">
