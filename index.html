@@ -229,272 +229,799 @@
       </div>
     </section>
 
-    <!-- SELECTED WORK -->
-    <section id="work" class="section">
-      <div class="container">
+  <!-- SELECTED WORK -->
+<section id="work" class="section">
+  <div class="container">
 
-        <div class="section-head">
-          <h2>Selected Work</h2>
-          <p class="section-subhead">
-           A selection of experiments that reduce friction, improve decision clarity, and validate measurable impact across the funnel.
-          </p>
+    <div class="section-head">
+      <h2>Selected Work</h2>
+      <p class="section-subhead">
+        A selection of experiments showing how behavioral insight and structured testing translate into measurable movement across the funnel.
+      </p>
+    </div>
+
+    <div class="accordion">
+
+      <!-- 1 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Promotional Urgency Pattern</span>
+              <span class="acc-meta">Repeated double-digit engagement lift while downstream orders remained stable</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Countdown messaging placed at a high-intent moment.</p>
+
+          <p><strong>Scenario:</strong> The team needed a simple way to communicate a limited-time offer without adding clutter or creating friction later in the funnel.</p>
+
+          <p><strong>Hypothesis:</strong> If a clear countdown is placed near the primary CTA and paired with tighter urgency messaging, engagement will increase while downstream performance remains stable or improves.</p>
+
+          <p><strong>My Role:</strong> I designed the countdown pattern itself, built the test plan, aligned success metrics and guardrails, and partnered with development to bring the experience to life. I also monitored performance throughout the test to support rollout decisions.</p>
+
+          <p><strong>Outcome:</strong> Countdown messaging consistently increased engagement across placements. In one of the strongest urgency tests, click-through rate increased by 30.88% while downstream orders remained stable. The result validated urgency as a reliable attention and engagement lever, while reinforcing that stronger conversion lift depends on the broader offer and decision context.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="countdown">
+                <div class="countdown__kicker">Ends in:</div>
+
+                <div class="countdown__row">
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdDays">--</div>
+                    <div class="timebox__label">Days</div>
+                  </div>
+
+                  <div class="time-sep">|</div>
+
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdHours">--</div>
+                    <div class="timebox__label">Hours</div>
+                  </div>
+
+                  <div class="time-sep">|</div>
+
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdMins">--</div>
+                    <div class="timebox__label">Mins</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">UX messaging</span>
+            <span class="tag">Urgency</span>
+            <span class="tag">Experimentation</span>
+          </div>
         </div>
+      </details>
 
-        <div class="accordion">
+      <!-- 2 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Contextual Cross Sell Placement</span>
+              <span class="acc-meta">28.95% engagement lift with stable downstream conversion</span>
+            </div>
+          </div>
+        </summary>
 
-          <!-- 1 -->
-          <details class="acc-card">
-            <summary>
-              <div class="acc-left">
-                <span class="acc-chevron">▾</span>
-                <div class="acc-title-wrap">
-                  <span class="acc-title">Promotional Urgency Pattern</span>
-                  <span class="acc-meta">Double digit engagement lift accross multiple tests</span>
-                </div>
-              </div>
-            </summary>
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Contextual product recommendation within a device discovery experience.</p>
 
-            <div class="acc-body">
-              <p><strong>Test Concept:</strong> Countdown messaging placed at a high intent moment.</p>
+          <p><strong>Scenario:</strong> Users browsing devices were not always seeing relevant companion products early enough in the journey, limiting discovery and cross-sell engagement.</p>
 
-              <p><strong>Scenario:</strong> The team needed a simple way to communicate a limited time offer without cluttering the page or creating friction later in the funnel.</p>
+          <p><strong>Hypothesis:</strong> If a more relevant companion product is surfaced in the discovery flow based on ecosystem context, engagement will improve without disrupting the primary browse goal.</p>
 
-              <p><strong>Hypothesis:</strong> If we place a clear countdown near the primary CTA and tighten urgency copy, engagement will increase while downstream performance remains stable or improves.</p>
+          <p><strong>My Role:</strong> I identified the opportunity, created the targeted audience strategy for the use case, mapped the placement to the right stage of the funnel, and aligned measurement to evaluate both engagement and downstream progression.</p>
 
-              <p><strong>My Role:</strong> I built the test plan, aligned success metrics and guardrails, partnered with design and development on the pattern, and monitored performance daily to support rollout decisions.</p>
+          <p><strong>Outcome:</strong> Context-aligned placement increased engagement by 28.95% and produced directional improvement in downstream cart starts and checkouts without disrupting the primary browse journey. The result validated contextual merchandising as an effective discovery lever, even where full conversion impact remained neutral.</p>
 
-              <p><strong>Outcome:</strong> The countdown increased clicks meaningfully across placements. In one of the strongest urgency tests, click through rate increased by 30.88% and while orders remained unchanged. The result validated urgency as an engagement driver while showing that stronger downstream conversion requires more than urgency alone.</p>
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
 
-              <div class="pattern-wrap pattern-divider">
-                <div class="pattern-chip">Example Pattern Tested</div>
-
-                <div class="pattern-card">
-                  <div class="countdown">
-                    <div class="countdown__kicker">Ends in:</div>
-
-                    <div class="countdown__row">
-                      <div class="timebox">
-                        <div class="timebox__num" id="cdDays">--</div>
-                        <div class="timebox__label">Days</div>
-                      </div>
-
-                      <div class="time-sep">|</div>
-
-                      <div class="timebox">
-                        <div class="timebox__num" id="cdHours">--</div>
-                        <div class="timebox__label">Hours</div>
-                      </div>
-
-                      <div class="time-sep">|</div>
-
-                      <div class="timebox">
-                        <div class="timebox__num" id="cdMins">--</div>
-                        <div class="timebox__label">Mins</div>
-                      </div>
-                    </div>
+            <div class="pattern-card">
+              <div class="xd-frame">
+                <div class="xd-intro">
+                  <div class="xd-title">Contextual product recommendation</div>
+                  <div class="xd-sub">
+                    Surface a relevant companion product within discovery based on ecosystem signals and recent device context.
                   </div>
                 </div>
-              </div>
 
-              <div class="meta-row">
-                <span class="tag">UX messaging</span>
-                <span class="tag">Urgency</span>
-                <span class="tag">Experimentation</span>
+                <div class="xd-products">
+                  <div class="xd-item">Phone Model A</div>
+                  <div class="xd-item">Phone Model B</div>
+                  <div class="xd-item">Phone Model C</div>
+                  <div class="xd-item">Phone Model D</div>
+                </div>
+
+                <div class="xd-callout">
+                  <div class="xd-context">Recommended companion device</div>
+                  <div class="xd-badge">Recommended</div>
+                  <div class="xd-callout-title">Connected Watch</div>
+                  <div class="xd-callout-copy">
+                    Works with your device ecosystem for notifications, activity tracking, and health features.
+                  </div>
+                  <button class="xd-btn" type="button">View device</button>
+                </div>
               </div>
             </div>
-          </details>
+          </div>
 
-          <!-- 2 -->
-          <details class="acc-card">
-            <summary>
-              <div class="acc-left">
-                <span class="acc-chevron">▾</span>
-                <div class="acc-title-wrap">
-                  <span class="acc-title">Contextual Cross Sell Placement</span>
-                  <span class="acc-meta">28.95% engagement lift with mixed conversion impact</span>
+          <div class="meta-row">
+            <span class="tag">Discovery</span>
+            <span class="tag">Cross sell</span>
+            <span class="tag">Funnel impact</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 3 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Navigation Wayfinding Improvement</span>
+              <span class="acc-meta">10.98% lift in key page visits at 99% confidence with stable conversion</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Navigation and wayfinding improvements at key decision points.</p>
+
+          <p><strong>Scenario:</strong> Users were not finding high-value pages quickly, which created drop-off, backtracking, and missed opportunities to move into the next best step.</p>
+
+          <p><strong>Hypothesis:</strong> If clearer navigation elements with more purposeful labels are introduced, more users will reach key pages and show stronger downstream progression.</p>
+
+          <p><strong>My Role:</strong> Using behavioral data, I identified the strongest pages to feature in the wayfinding pattern, defined the success metrics across exploration and downstream movement, and made sure the results were interpreted as true navigational improvement rather than inflated performance language.</p>
+
+          <p><strong>Outcome:</strong> Adding clearer wayfinding increased visits to key pages by 10.98% at 99% confidence. While cart starts and overall conversion did not significantly change, the test confirmed that stronger navigation improved exploration and pathfinding without harming revenue-driving behavior.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="wf-head">
+                <div class="wf-title">Quick links</div>
+                <div class="wf-sub">
+                  Common destinations users look for during evaluation.
                 </div>
-              </div>
-            </summary>
 
-            <div class="acc-body">
-              <p><strong>Test Concept:</strong> Contextual product recommendation within a device listing experience.</p>
-
-              <p><strong>Scenario:</strong> Users browsing devices were not always seeing relevant companion products early enough in the journey, which limited discovery and cross sell engagement.</p>
-
-              <p><strong>Hypothesis:</strong> If we surface a more relevant companion product in the discovery flow based on ecosystem context, engagement will improve without disrupting the primary browse goal.</p>
-
-              <p><strong>My Role:</strong> I mapped the placement to the funnel stage, defined the eligibility logic, aligned tracking needs, and evaluated performance beyond clicks by checking progression and conversion guardrails.</p>
-
-              <p><strong>Outcome:</strong> Context aligned promotional placement produced a 28.95% overall engagement lift. The strongest variants drove higher click through rate and directional lifts in cart starts and checkouts, while overall engagement and conversion remained unaffected. The result supported contextual placement as a strong discovery and merchandising lever.</p>
-
-              <div class="pattern-wrap pattern-divider">
-                <div class="pattern-chip">Example Pattern Tested</div>
-
-                <div class="pattern-card">
-                  <div class="xd-frame">
-                    <div class="xd-intro">
-                      <div class="xd-title">Contextual product recommendation</div>
-                      <div class="xd-sub">
-                        Surface a relevant companion product within discovery based on ecosystem signals and recent device context.
-                      </div>
-                    </div>
-
-                    <div class="xd-products">
-                      <div class="xd-item">Phone Model A</div>
-                      <div class="xd-item">Phone Model B</div>
-                      <div class="xd-item">Phone Model C</div>
-                      <div class="xd-item">Phone Model D</div>
-                    </div>
-
-                    <div class="xd-callout">
-                      <div class="xd-context">Recommended companion device</div>
-                      <div class="xd-badge">Recommended</div>
-                      <div class="xd-callout-title">Connected Watch</div>
-                      <div class="xd-callout-copy">
-                        Works with your device ecosystem for notifications, activity tracking, and health features.
-                      </div>
-                      <button class="xd-btn" type="button">View device</button>
-                    </div>
-                  </div>
+                <div class="wf-note">
+                  Example placement near a decision point to reduce hunting and improve progression.
                 </div>
               </div>
 
-              <div class="meta-row">
-                <span class="tag">Discovery</span>
-                <span class="tag">Cross sell</span>
-                <span class="tag">Funnel impact</span>
+              <div class="wf-actions">
+                <a class="wf-btn wf-btn--primary" href="#0" aria-disabled="true">Pricing</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Compare plans</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Features</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Compatibility</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Reviews</a>
               </div>
             </div>
-          </details>
+          </div>
 
-          <!-- 3 -->
-          <details class="acc-card">
-            <summary>
-              <div class="acc-left">
-                <span class="acc-chevron">▾</span>
-                <div class="acc-title-wrap">
-                  <span class="acc-title">Navigation Wayfinding Improvement</span>
-                  <span class="acc-meta">10.98% lift in key page visits at 99% confidence</span>
-                </div>
-              </div>
-            </summary>
+          <div class="meta-row">
+            <span class="tag">IA</span>
+            <span class="tag">UX clarity</span>
+            <span class="tag">Measurement</span>
+          </div>
+        </div>
+      </details>
 
-            <div class="acc-body">
-              <p><strong>Test Concept:</strong> Navigation and wayfinding improvements at key decision points.</p>
+      <!-- 4 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Decision Clarity in Plan Selection</span>
+              <span class="acc-meta">Significant conversion lift by clarifying the recommended path</span>
+            </div>
+          </div>
+        </summary>
 
-              <p><strong>Scenario:</strong> Users were not finding high value pages quickly, which created drop off, backtracking, and missed opportunities to move into the next best step.</p>
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Offer and plan messaging at the moment of decision.</p>
 
-              <p><strong>Hypothesis:</strong> If we introduce a clearer navigation element with more purposeful labels, more users will reach key pages and show stronger downstream progression.</p>
+          <p><strong>Scenario:</strong> Users hesitated when comparing options because the value proposition and recommended path were not immediately clear.</p>
 
-              <p><strong>My Role:</strong> I defined the behavioral goals, set the success metrics across engagement and downstream movement, and made sure the results were interpreted as a net new navigational aid rather than inflated performance language.</p>
+          <p><strong>Hypothesis:</strong> If the messaging is simplified and the most relevant path is made easier to understand, hesitation will drop and progression to the next step will improve.</p>
 
-              <p><strong>Outcome:</strong> Adding wayfinding buttons increased visits to key pages by 10.98% at 99% confidence. Cart starts and overall conversion rate showed no statistically significant change, which confirmed that clearer entry points improved exploration without disrupting revenue driving behavior.</p>
+          <p><strong>My Role:</strong> I shaped the hypothesis, created the targeted audience strategy based on the options shown on the page, aligned stakeholders around success criteria, and translated the business question into measurable behavior that could be validated through testing.</p>
 
-              <div class="pattern-wrap pattern-divider">
-                <div class="pattern-chip">Example Pattern Tested</div>
+          <p><strong>Outcome:</strong> Highlighting the plan required to unlock the best offer significantly increased conversion rate, confirming that unclear plan guidance was a meaningful friction point. The test showed that clearer decision framing can directly improve conversion when users are choosing between competing options.</p>
 
-                <div class="pattern-card">
-                  <div class="wf-head">
-                    <div class="wf-title">Quick links</div>
-                    <div class="wf-sub">
-                      Common destinations users look for during evaluation.
-                    </div>
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
 
-                    <div class="wf-note">
-                      Example placement near a decision point to reduce hunting and improve progression.
-                    </div>
-                  </div>
-
-                  <div class="wf-actions">
-                    <a class="wf-btn wf-btn--primary" href="#0" aria-disabled="true">Pricing</a>
-                    <a class="wf-btn" href="#0" aria-disabled="true">Compare plans</a>
-                    <a class="wf-btn" href="#0" aria-disabled="true">Features</a>
-                    <a class="wf-btn" href="#0" aria-disabled="true">Compatibility</a>
-                    <a class="wf-btn" href="#0" aria-disabled="true">Reviews</a>
-                  </div>
+            <div class="pattern-card">
+              <div class="dc-head">
+                <div class="dc-title">Choose your plan</div>
+                <div class="dc-sub">
+                  Simplifying options and highlighting the recommended path reduces hesitation.
                 </div>
               </div>
 
-              <div class="meta-row">
-                <span class="tag">IA</span>
-                <span class="tag">UX clarity</span>
-                <span class="tag">Measurement</span>
+              <div class="dc-plans">
+                <div class="dc-plan">
+                  <div class="dc-plan-name">Basic</div>
+                  <div class="dc-price">$9/mo</div>
+
+                  <ul class="dc-features">
+                    <li>Core features</li>
+                    <li>Email support</li>
+                  </ul>
+
+                  <button class="dc-btn" type="button">Select plan</button>
+                </div>
+
+                <div class="dc-plan dc-plan--recommended">
+                  <div class="dc-badge">Recommended</div>
+
+                  <div class="dc-plan-name">Pro</div>
+                  <div class="dc-price">$19/mo</div>
+
+                  <ul class="dc-features">
+                    <li>Advanced analytics</li>
+                    <li>Priority support</li>
+                  </ul>
+
+                  <button class="dc-btn dc-btn--primary" type="button">Select plan</button>
+                </div>
               </div>
             </div>
-          </details>
+          </div>
 
-          <!-- 4 -->
-          <details class="acc-card">
-            <summary>
-              <div class="acc-left">
-                <span class="acc-chevron">▾</span>
-                <div class="acc-title-wrap">
-                  <span class="acc-title">Decision Clarity in Plan Selection</span>
-                  <span class="acc-meta">Significant CVR improvement by clarifying the best path</span>
-                </div>
-              </div>
-            </summary>
+          <div class="meta-row">
+            <span class="tag">Decision design</span>
+            <span class="tag">Copy strategy</span>
+            <span class="tag">UX testing</span>
+          </div>
+        </div>
+      </details><!-- SELECTED WORK -->
+<section id="work" class="section">
+  <div class="container">
 
-            <div class="acc-body">
-              <p><strong>Test Concept:</strong> Offer and plan messaging at the moment of decision.</p>
+    <div class="section-head">
+      <h2>Selected Work</h2>
+      <p class="section-subhead">
+        A selection of experiments showing how behavioral insight and structured testing translate into measurable movement across the funnel.
+      </p>
+    </div>
 
-              <p><strong>Scenario:</strong> Users hesitated when comparing options because the value proposition and recommended path were not immediately clear.</p>
+    <div class="accordion">
 
-              <p><strong>Hypothesis:</strong> If we simplify the message and make the most relevant path easier to understand, hesitation will drop and progression to the next step will improve.</p>
+      <!-- 1 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Promotional Urgency Pattern</span>
+              <span class="acc-meta">Repeated double-digit engagement lift while downstream orders remained stable</span>
+            </div>
+          </div>
+        </summary>
 
-              <p><strong>My Role:</strong> I shaped the hypothesis, aligned stakeholders around success criteria, translated the business question into measurable behavior, and helped define the pattern that made the recommended choice clearer.</p>
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Countdown messaging placed at a high-intent moment.</p>
 
-              <p><strong>Outcome:</strong> Highlighting the plan needed to unlock the best offer significantly increased conversion rate, confirming that plan clarity was a real friction point in the decision process. The result supported using clearer guidance on future offer dependent experiences.</p>
+          <p><strong>Scenario:</strong> The team needed a simple way to communicate a limited-time offer without adding clutter or creating friction later in the funnel.</p>
 
-              <div class="pattern-wrap pattern-divider">
-                <div class="pattern-chip">Example Pattern Tested</div>
+          <p><strong>Hypothesis:</strong> If a clear countdown is placed near the primary CTA and paired with tighter urgency messaging, engagement will increase while downstream performance remains stable or improves.</p>
 
-                <div class="pattern-card">
-                  <div class="dc-head">
-                    <div class="dc-title">Choose your plan</div>
-                    <div class="dc-sub">
-                      Simplifying options and highlighting the recommended path reduces hesitation.
-                    </div>
+          <p><strong>My Role:</strong> I designed the countdown pattern itself, built the test plan, aligned success metrics and guardrails, and partnered with development to bring the experience to life. I also monitored performance throughout the test to support rollout decisions.</p>
+
+          <p><strong>Outcome:</strong> Countdown messaging consistently increased engagement across placements. In one of the strongest urgency tests, click-through rate increased by 30.88% while downstream orders remained stable. The result validated urgency as a reliable attention and engagement lever, while reinforcing that stronger conversion lift depends on the broader offer and decision context.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="countdown">
+                <div class="countdown__kicker">Ends in:</div>
+
+                <div class="countdown__row">
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdDays">--</div>
+                    <div class="timebox__label">Days</div>
                   </div>
 
-                  <div class="dc-plans">
-                    <div class="dc-plan">
-                      <div class="dc-plan-name">Basic</div>
-                      <div class="dc-price">$9/mo</div>
+                  <div class="time-sep">|</div>
 
-                      <ul class="dc-features">
-                        <li>Core features</li>
-                        <li>Email support</li>
-                      </ul>
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdHours">--</div>
+                    <div class="timebox__label">Hours</div>
+                  </div>
 
-                      <button class="dc-btn" type="button">Select plan</button>
-                    </div>
+                  <div class="time-sep">|</div>
 
-                    <div class="dc-plan dc-plan--recommended">
-                      <div class="dc-badge">Recommended</div>
-
-                      <div class="dc-plan-name">Pro</div>
-                      <div class="dc-price">$19/mo</div>
-
-                      <ul class="dc-features">
-                        <li>Advanced analytics</li>
-                        <li>Priority support</li>
-                      </ul>
-
-                      <button class="dc-btn dc-btn--primary" type="button">Select plan</button>
-                    </div>
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdMins">--</div>
+                    <div class="timebox__label">Mins</div>
                   </div>
                 </div>
-              </div>
-
-              <div class="meta-row">
-                <span class="tag">Decision design</span>
-                <span class="tag">Copy strategy</span>
-                <span class="tag">UX testing</span>
               </div>
             </div>
-          </details>
+          </div>
 
+          <div class="meta-row">
+            <span class="tag">UX messaging</span>
+            <span class="tag">Urgency</span>
+            <span class="tag">Experimentation</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 2 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Contextual Cross Sell Placement</span>
+              <span class="acc-meta">28.95% engagement lift with stable downstream conversion</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Contextual product recommendation within a device discovery experience.</p>
+
+          <p><strong>Scenario:</strong> Users browsing devices were not always seeing relevant companion products early enough in the journey, limiting discovery and cross-sell engagement.</p>
+
+          <p><strong>Hypothesis:</strong> If a more relevant companion product is surfaced in the discovery flow based on ecosystem context, engagement will improve without disrupting the primary browse goal.</p>
+
+          <p><strong>My Role:</strong> I identified the opportunity, created the targeted audience strategy for the use case, mapped the placement to the right stage of the funnel, and aligned measurement to evaluate both engagement and downstream progression.</p>
+
+          <p><strong>Outcome:</strong> Context-aligned placement increased engagement by 28.95% and produced directional improvement in downstream cart starts and checkouts without disrupting the primary browse journey. The result validated contextual merchandising as an effective discovery lever, even where full conversion impact remained neutral.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="xd-frame">
+                <div class="xd-intro">
+                  <div class="xd-title">Contextual product recommendation</div>
+                  <div class="xd-sub">
+                    Surface a relevant companion product within discovery based on ecosystem signals and recent device context.
+                  </div>
+                </div>
+
+                <div class="xd-products">
+                  <div class="xd-item">Phone Model A</div>
+                  <div class="xd-item">Phone Model B</div>
+                  <div class="xd-item">Phone Model C</div>
+                  <div class="xd-item">Phone Model D</div>
+                </div>
+
+                <div class="xd-callout">
+                  <div class="xd-context">Recommended companion device</div>
+                  <div class="xd-badge">Recommended</div>
+                  <div class="xd-callout-title">Connected Watch</div>
+                  <div class="xd-callout-copy">
+                    Works with your device ecosystem for notifications, activity tracking, and health features.
+                  </div>
+                  <button class="xd-btn" type="button">View device</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">Discovery</span>
+            <span class="tag">Cross sell</span>
+            <span class="tag">Funnel impact</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 3 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Navigation Wayfinding Improvement</span>
+              <span class="acc-meta">10.98% lift in key page visits at 99% confidence with stable conversion</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Navigation and wayfinding improvements at key decision points.</p>
+
+          <p><strong>Scenario:</strong> Users were not finding high-value pages quickly, which created drop-off, backtracking, and missed opportunities to move into the next best step.</p>
+
+          <p><strong>Hypothesis:</strong> If clearer navigation elements with more purposeful labels are introduced, more users will reach key pages and show stronger downstream progression.</p>
+
+          <p><strong>My Role:</strong> Using behavioral data, I identified the strongest pages to feature in the wayfinding pattern, defined the success metrics across exploration and downstream movement, and made sure the results were interpreted as true navigational improvement rather than inflated performance language.</p>
+
+          <p><strong>Outcome:</strong> Adding clearer wayfinding increased visits to key pages by 10.98% at 99% confidence. While cart starts and overall conversion did not significantly change, the test confirmed that stronger navigation improved exploration and pathfinding without harming revenue-driving behavior.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="wf-head">
+                <div class="wf-title">Quick links</div>
+                <div class="wf-sub">
+                  Common destinations users look for during evaluation.
+                </div>
+
+                <div class="wf-note">
+                  Example placement near a decision point to reduce hunting and improve progression.
+                </div>
+              </div>
+
+              <div class="wf-actions">
+                <a class="wf-btn wf-btn--primary" href="#0" aria-disabled="true">Pricing</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Compare plans</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Features</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Compatibility</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Reviews</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">IA</span>
+            <span class="tag">UX clarity</span>
+            <span class="tag">Measurement</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 4 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Decision Clarity in Plan Selection</span>
+              <span class="acc-meta">Significant conversion lift by clarifying the recommended path</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Offer and plan messaging at the moment of decision.</p>
+
+          <p><strong>Scenario:</strong> Users hesitated when comparing options because the value proposition and recommended path were not immediately clear.</p>
+
+          <p><strong>Hypothesis:</strong> If the messaging is simplified and the most relevant path is made easier to understand, hesitation will drop and progression to the next step will improve.</p>
+
+          <p><strong>My Role:</strong> I shaped the hypothesis, created the targeted audience strategy based on the options shown on the page, aligned stakeholders around success criteria, and translated the business question into measurable behavior that could be validated through testing.</p>
+
+          <p><strong>Outcome:</strong> Highlighting the plan required to unlock the best offer significantly increased conversion rate, confirming that unclear plan guidance was a meaningful friction point. The test showed that clearer decision framing can directly improve conversion when users are choosing between competing options.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="dc-head">
+                <div class="dc-title">Choose your plan</div>
+                <div class="dc-sub">
+                  Simplifying options and highlighting the recommended path reduces hesitation.
+                </div>
+              </div>
+
+              <div class="dc-plans">
+                <div class="dc-plan">
+                  <div class="dc-plan-name">Basic</div>
+                  <div class="dc-price">$9/mo</div>
+
+                  <ul class="dc-features">
+                    <li>Core features</li>
+                    <li>Email support</li>
+                  </ul>
+
+                  <button class="dc-btn" type="button">Select plan</button>
+                </div>
+
+                <div class="dc-plan dc-plan--recommended">
+                  <div class="dc-badge">Recommended</div>
+
+                  <div class="dc-plan-name">Pro</div>
+                  <div class="dc-price">$19/mo</div>
+
+                  <ul class="dc-features">
+                    <li>Advanced analytics</li>
+                    <li>Priority support</li>
+                  </ul>
+
+                  <button class="dc-btn dc-btn--primary" type="button">Select plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">Decision design</span>
+            <span class="tag">Copy strategy</span>
+            <span class="tag">UX testing</span>
+          </div>
+        </div>
+      </details><!-- SELECTED WORK -->
+<section id="work" class="section">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Selected Work</h2>
+      <p class="section-subhead">
+        A selection of experiments showing how behavioral insight and structured testing translate into measurable movement across the funnel.
+      </p>
+    </div>
+
+    <div class="accordion">
+
+      <!-- 1 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Promotional Urgency Pattern</span>
+              <span class="acc-meta">Repeated double-digit engagement lift while downstream orders remained stable</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Countdown messaging placed at a high-intent moment.</p>
+
+          <p><strong>Scenario:</strong> The team needed a simple way to communicate a limited-time offer without adding clutter or creating friction later in the funnel.</p>
+
+          <p><strong>Hypothesis:</strong> If a clear countdown is placed near the primary CTA and paired with tighter urgency messaging, engagement will increase while downstream performance remains stable or improves.</p>
+
+          <p><strong>My Role:</strong> I designed the countdown pattern itself, built the test plan, aligned success metrics and guardrails, and partnered with development to bring the experience to life. I also monitored performance throughout the test to support rollout decisions.</p>
+
+          <p><strong>Outcome:</strong> Countdown messaging consistently increased engagement across placements. In one of the strongest urgency tests, click-through rate increased by 30.88% while downstream orders remained stable. The result validated urgency as a reliable attention and engagement lever, while reinforcing that stronger conversion lift depends on the broader offer and decision context.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="countdown">
+                <div class="countdown__kicker">Ends in:</div>
+
+                <div class="countdown__row">
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdDays">--</div>
+                    <div class="timebox__label">Days</div>
+                  </div>
+
+                  <div class="time-sep">|</div>
+
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdHours">--</div>
+                    <div class="timebox__label">Hours</div>
+                  </div>
+
+                  <div class="time-sep">|</div>
+
+                  <div class="timebox">
+                    <div class="timebox__num" id="cdMins">--</div>
+                    <div class="timebox__label">Mins</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">UX messaging</span>
+            <span class="tag">Urgency</span>
+            <span class="tag">Experimentation</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 2 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Contextual Cross Sell Placement</span>
+              <span class="acc-meta">28.95% engagement lift with stable downstream conversion</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Contextual product recommendation within a device discovery experience.</p>
+
+          <p><strong>Scenario:</strong> Users browsing devices were not always seeing relevant companion products early enough in the journey, limiting discovery and cross-sell engagement.</p>
+
+          <p><strong>Hypothesis:</strong> If a more relevant companion product is surfaced in the discovery flow based on ecosystem context, engagement will improve without disrupting the primary browse goal.</p>
+
+          <p><strong>My Role:</strong> I identified the opportunity, created the targeted audience strategy for the use case, mapped the placement to the right stage of the funnel, and aligned measurement to evaluate both engagement and downstream progression.</p>
+
+          <p><strong>Outcome:</strong> Context-aligned placement increased engagement by 28.95% and produced directional improvement in downstream cart starts and checkouts without disrupting the primary browse journey. The result validated contextual merchandising as an effective discovery lever, even where full conversion impact remained neutral.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="xd-frame">
+                <div class="xd-intro">
+                  <div class="xd-title">Contextual product recommendation</div>
+                  <div class="xd-sub">
+                    Surface a relevant companion product within discovery based on ecosystem signals and recent device context.
+                  </div>
+                </div>
+
+                <div class="xd-products">
+                  <div class="xd-item">Phone Model A</div>
+                  <div class="xd-item">Phone Model B</div>
+                  <div class="xd-item">Phone Model C</div>
+                  <div class="xd-item">Phone Model D</div>
+                </div>
+
+                <div class="xd-callout">
+                  <div class="xd-context">Recommended companion device</div>
+                  <div class="xd-badge">Recommended</div>
+                  <div class="xd-callout-title">Connected Watch</div>
+                  <div class="xd-callout-copy">
+                    Works with your device ecosystem for notifications, activity tracking, and health features.
+                  </div>
+                  <button class="xd-btn" type="button">View device</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">Discovery</span>
+            <span class="tag">Cross sell</span>
+            <span class="tag">Funnel impact</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 3 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Navigation Wayfinding Improvement</span>
+              <span class="acc-meta">10.98% lift in key page visits at 99% confidence with stable conversion</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Navigation and wayfinding improvements at key decision points.</p>
+
+          <p><strong>Scenario:</strong> Users were not finding high-value pages quickly, which created drop-off, backtracking, and missed opportunities to move into the next best step.</p>
+
+          <p><strong>Hypothesis:</strong> If clearer navigation elements with more purposeful labels are introduced, more users will reach key pages and show stronger downstream progression.</p>
+
+          <p><strong>My Role:</strong> Using behavioral data, I identified the strongest pages to feature in the wayfinding pattern, defined the success metrics across exploration and downstream movement, and made sure the results were interpreted as true navigational improvement rather than inflated performance language.</p>
+
+          <p><strong>Outcome:</strong> Adding clearer wayfinding increased visits to key pages by 10.98% at 99% confidence. While cart starts and overall conversion did not significantly change, the test confirmed that stronger navigation improved exploration and pathfinding without harming revenue-driving behavior.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="wf-head">
+                <div class="wf-title">Quick links</div>
+                <div class="wf-sub">
+                  Common destinations users look for during evaluation.
+                </div>
+
+                <div class="wf-note">
+                  Example placement near a decision point to reduce hunting and improve progression.
+                </div>
+              </div>
+
+              <div class="wf-actions">
+                <a class="wf-btn wf-btn--primary" href="#0" aria-disabled="true">Pricing</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Compare plans</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Features</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Compatibility</a>
+                <a class="wf-btn" href="#0" aria-disabled="true">Reviews</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">IA</span>
+            <span class="tag">UX clarity</span>
+            <span class="tag">Measurement</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- 4 -->
+      <details class="acc-card">
+        <summary>
+          <div class="acc-left">
+            <span class="acc-chevron">▾</span>
+            <div class="acc-title-wrap">
+              <span class="acc-title">Decision Clarity in Plan Selection</span>
+              <span class="acc-meta">Significant conversion lift by clarifying the recommended path</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="acc-body">
+          <p><strong>Test Concept:</strong> Offer and plan messaging at the moment of decision.</p>
+
+          <p><strong>Scenario:</strong> Users hesitated when comparing options because the value proposition and recommended path were not immediately clear.</p>
+
+          <p><strong>Hypothesis:</strong> If the messaging is simplified and the most relevant path is made easier to understand, hesitation will drop and progression to the next step will improve.</p>
+
+          <p><strong>My Role:</strong> I shaped the hypothesis, created the targeted audience strategy based on the options shown on the page, aligned stakeholders around success criteria, and translated the business question into measurable behavior that could be validated through testing.</p>
+
+          <p><strong>Outcome:</strong> Highlighting the plan required to unlock the best offer significantly increased conversion rate, confirming that unclear plan guidance was a meaningful friction point. The test showed that clearer decision framing can directly improve conversion when users are choosing between competing options.</p>
+
+          <div class="pattern-wrap pattern-divider">
+            <div class="pattern-chip">Example Pattern Tested</div>
+
+            <div class="pattern-card">
+              <div class="dc-head">
+                <div class="dc-title">Choose your plan</div>
+                <div class="dc-sub">
+                  Simplifying options and highlighting the recommended path reduces hesitation.
+                </div>
+              </div>
+
+              <div class="dc-plans">
+                <div class="dc-plan">
+                  <div class="dc-plan-name">Basic</div>
+                  <div class="dc-price">$9/mo</div>
+
+                  <ul class="dc-features">
+                    <li>Core features</li>
+                    <li>Email support</li>
+                  </ul>
+
+                  <button class="dc-btn" type="button">Select plan</button>
+                </div>
+
+                <div class="dc-plan dc-plan--recommended">
+                  <div class="dc-badge">Recommended</div>
+
+                  <div class="dc-plan-name">Pro</div>
+                  <div class="dc-price">$19/mo</div>
+
+                  <ul class="dc-features">
+                    <li>Advanced analytics</li>
+                    <li>Priority support</li>
+                  </ul>
+
+                  <button class="dc-btn dc-btn--primary" type="button">Select plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <span class="tag">Decision design</span>
+            <span class="tag">Copy strategy</span>
+            <span class="tag">UX testing</span>
+          </div>
+        </div>
+      </details>
           <!-- 5 -->
           <details class="acc-card span2">
             <summary>
