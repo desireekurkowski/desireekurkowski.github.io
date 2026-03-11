@@ -285,7 +285,7 @@ h3{
 }
 
 /* =========================
-   Teams Section
+   Teams Section - arrow
 ========================= */
 
 .teams-item{
@@ -294,7 +294,7 @@ h3{
   background:rgba(255,255,255,.88);
   border:1px solid rgba(0,0,0,.05);
   border-radius:16px;
-  padding:16px 42px 16px 18px; /* extra space for arrow */
+  padding:16px 42px 16px 18px;
   color:var(--text);
   font-size:14px;
   line-height:1.5;
@@ -321,7 +321,7 @@ h3{
   outline-offset:3px;
 }
 
-/* clickable arrow indicator */
+/* Arrow indicator */
 
 .teams-item::after{
   content:"→";
@@ -330,7 +330,7 @@ h3{
   top:50%;
   transform:translateY(-50%);
   font-size:16px;
-  color:rgba(0,0,0,.35);
+  color:rgba(0,0,0,.28);
   transition:transform .18s ease, color .18s ease;
 }
 
@@ -338,7 +338,6 @@ h3{
   transform:translateY(-50%) translateX(4px);
   color:var(--accent);
 }
-
 /* Modal */
 
 .teams-dialog{
