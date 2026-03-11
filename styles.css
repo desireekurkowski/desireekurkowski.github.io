@@ -296,19 +296,19 @@ h3{
   line-height:1.5;
   cursor:pointer;
   transition:
-    transform .16s ease,
-    box-shadow .20s ease,
-    background .20s ease,
-    border-color .20s ease;
+    transform .18s ease,
+    box-shadow .22s ease,
+    background .22s ease,
+    border-color .22s ease;
 }
 
 .teams-item:hover{
-  transform:translateY(-2px);
+  transform:translateY(-3px);
   background:#fff;
-  border-color:rgba(63,60,145,.20);
+  border-color:rgba(63,60,145,.28);
   box-shadow:
-    0 8px 24px rgba(0,0,0,.04),
-    0 6px 18px rgba(63,60,145,.08);
+    0 12px 28px rgba(0,0,0,.06),
+    0 8px 20px rgba(63,60,145,.10);
 }
 
 .teams-item:focus-visible{
